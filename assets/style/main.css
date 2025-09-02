@@ -381,7 +381,7 @@ div.card_origin > p.history_time {
     position: relative;
     top: -50px;
     left: 160px;
-    color: lightgray;
+    color: white;
     font-size: 20px;
 }
 
@@ -397,7 +397,7 @@ div.card_destination > p.history_time {
     position: relative;
     top: -280px;
     left: 160px;
-    color: lightgray;
+    color: white;
     font-size: 20px;
 }
 
