@@ -18,7 +18,7 @@
             const card = getCookie("iciwi_serial");
             if (card) {
                 // redirect to result page with the card
-                window.location.href = "result/v2/?card=" + encodeURIComponent(card);
+                window.location.href = "result/transit_enquiry/v2/?card=" + encodeURIComponent(card);
             } else {
                 // no card bound → go to default page
                 window.location.href = "transit_enquiry/";
