@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="user-scalable=no">
+    <title>My IC Card | Wasabi</title>
+    <link rel="stylesheet" href="../../../assets/style/main.css">
+    <link rel="icon" type="image/png" href="../../../assets/favicon/wasabi.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0" rel="stylesheet"/>
+    <script src="../../../api/loading.js"></script>
+    <script src="../../../api/transaction_page.js"></script>
+    <script src="../../../api/transaction_handle.js"></script>
+</head>
+<body>
+<div id="loading_overlay">
+    <div class="spinner"></div>
+</div>
+<header id="top_bar">
+    <img src="../../../assets/favicon/wasabi_head.png" alt="Wasabi">
+    <h1>ICIWI Card Enquiry</h1>
+</header>
+<main>
+    <div class="unbind_button_fixed"><input type="button" value="Unbind Card" id="unbind_button"></div>
+    <div class="card_template">
+        <img class="card_image" src="../../../assets/images/wasabi_template.png" alt="Wasabi Card Image">
+        <div class="card_text">
+            <p class="card_title"><b>Wasabi/ICIWI Card</b></p>
+            <p class="card_title" id="card_digit_behind">• xxxx</p>
+            <p class="card_title card_margin"><b>Balance</b></p>
+            <p class="card_title balance" id="card_digit_balance">£ 0.00</p>
+        </div>
+    </div>
+    <div class="card_notice">
+        <p class="card_notice">*Time is being shown by GMT+8</p>
+    </div>
+</main>
+<nav class="transaction">
+    <input type="button" value="Transaction" id="payment_history" class="active">
+    <input type="button" value="Transit History" id="trip_history">
+    <input type="button" value="My Passes" id="passes" disabled>
+</nav>
+<section id="transaction_page">
+    <table id="transaction_history">
+
+    </table>
+</section>
+<section id="trip_history_page">
+    
+</section>
+<section id="passes_page"></section>
+<footer class="v2">© 2025 Takarazaki Joint Transport Inc.<br>ICIWI are related to role-playing Minecraft server, do not mix up with real-life resources.</footer>
+</body>
+</html>
