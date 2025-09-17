@@ -588,7 +588,7 @@ let actual_serial;
                 let transit_fare = document.createElement("div");
                 transit_fare.className = "transit_fare";
                 let fareCalc = t.fare;
-                if (t.fare === 0) {
+                if (t.fare === 0 && i !== 0) {
                     fareCalc = Math.abs(t.balance - last_exit_fare).toFixed(2);
                 } else {
                     if (t.fare !== null || t.fare !== "") {
