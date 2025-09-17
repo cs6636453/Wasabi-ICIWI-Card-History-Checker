@@ -41,10 +41,11 @@ let actual_serial;
     }
 
     function fmtTimeLocalFromDate(dateObj, withSeconds = false) {
-        if (!dateObj) return '';
-        if (withSeconds) return dateObj.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-        return dateObj.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    }
+    if (!dateObj) return '';
+    const opts = { hour: '2-digit', minute: '2-digit', hour12: false };
+    if (withSeconds) opts.second = '2-digit';
+    return dateObj.toLocaleTimeString([], opts);
+}
 
     // normalize osi (always return string 'true'/'false' or '' if missing)
     function normalizeOsi(raw) {
