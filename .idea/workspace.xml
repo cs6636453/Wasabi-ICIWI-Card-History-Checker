@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81356273-a20c-4788-9ca8-09d3711425b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/bindcard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/favicon/wasabi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/wasabi_template.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/style/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/iciwi.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transit_enquiry/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transit_enquiry/result/invalid/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transit_enquiry/result/v2/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="4e1e2ff5-9b4a-4fb1-887a-9a1611f2a3b1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,22 +13,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="325lqTghdHlflM4Lecl9Z5AzGMx" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="32lrnCd3nE4OvL0025VzqqkfNWl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,9 +32,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/phong/Documents/Wasabi_IC/assets/favicon&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/phong/Documents/wasabi/assets/image&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -62,13 +44,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\phong\Documents\Wasabi_IC\assets\favicon" />
+      <recent name="C:\Users\phong\Documents\wasabi\assets\image" />
+      <recent name="C:\Users\phong\Documents\wasabi\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\phong\Documents\Wasabi_IC\assets\images" />
-      <recent name="C:\Users\phong\Documents\Wasabi_IC\assets\favicon" />
-      <recent name="C:\Users\phong\Documents\Wasabi_IC\resources" />
-      <recent name="C:\Users\phong\Documents\Wasabi_IC\transit_enquiry\result\v2" />
+      <recent name="C:\Users\phong\Documents\wasabi\localdata" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -80,14 +60,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="81356273-a20c-4788-9ca8-09d3711425b2" name="Changes" comment="" />
-      <created>1756718506169</created>
+      <changelist id="4e1e2ff5-9b4a-4fb1-887a-9a1611f2a3b1" name="Changes" comment="" />
+      <created>1758006164482</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1756718506169</updated>
-      <workItem from="1756718507805" duration="2605000" />
-      <workItem from="1756737548519" duration="6949000" />
-      <workItem from="1756788868377" duration="30608000" />
+      <updated>1758006164482</updated>
+      <workItem from="1758006166069" duration="3751000" />
+      <workItem from="1758023080181" duration="33970000" />
     </task>
     <servers />
   </component>

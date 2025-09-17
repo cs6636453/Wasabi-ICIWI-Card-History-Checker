@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png"/>
+
+    <!-- Mobile-first design -->
+    <link rel="stylesheet" href="../assets/stylesheets/template.css">
+
+    <!-- Import Google fonts logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@1" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Bind IC Card | Wasabi App</title>
+
+    <script src="../assets/scripts/page_control.js"></script>
+    <script src="../assets/scripts/bind_card.js"></script>
+</head>
+<body>
+
+<div id="loader">
+    <div class="spinner"></div>
+</div>
+
+<!-- Header -->
+<header>
+    <img src="../assets/favicon.png" alt="TJT Icon">
+    <h1 id="mobile_header">Bind IC Card</h1>
+    <h1 id="desktop_header">Wasabi Card • Bind IC Card</h1>
+</header>
+
+<main>
+
+    <!-- Dev here -->
+    <section id="card_form">
+        <p>Wasabi/pancard no.</p>
+        <div class="card_input">
+            <label for="card_no">B</label>
+            <input type="text" id="card_no" name="card_no" placeholder="x-xxxxx" pattern="[A-Z]-[0-9]{1,5}" autocomplete="off">
+        </div>
+        <p class="card_hint">*Only card starts with "B" are supported.</p>
+        <p id="hint_error"></p>
+    </section>
+
+    <section id="card_binding">
+        <div class="binding_notice">
+            <span class="material-symbols-outlined">warning</span>
+            <p>Notice:</p>
+        </div>
+
+        <div class="binding_notice_2">
+            <span class="material-symbols-outlined">payment_card</span>
+            <p><b>Support cards:</b> Wasabi, pancard, All Mizuno Debit Card, or any ICIWI cards issued in Limaru.</p>
+        </div>
+
+        <div class="binding_desktop">
+            <div class="binding_notice_2 bind_card_next">
+                <span class="material-symbols-outlined bind_card_next">credit_card_clock</span>
+                <p class="bind_card_next">Currently, system is under testing. So only data before 31 August 2025 will be shown.</p>
+            </div>
+
+            <div class="binding_notice_2 bind_card_next">
+                <span class="material-symbols-outlined bind_card_next">cookie</span>
+                <p class="bind_card_next">By binding the card, you are agree to store the card number in cookie.</p>
+            </div>
+        </div>
+
+
+
+        <button value="Bind this card" id="bind_button">Bind this card</button>
+    </section>
+</main>
+</body>
+</html>
