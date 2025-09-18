@@ -240,10 +240,17 @@ cardEvents.sort((a, b) => {
                     _ts: p.tsDate
                 }))
                 .sort((a, b) => {
-                    const da = a._ts ? a._ts.getTime() : 0;
-                    const db = b._ts ? b._ts.getTime() : 0;
-                    return db - da;
-                })
+    const da = a._ts ? a._ts.getTime() : 0;
+    const db = b._ts ? b._ts.getTime() : 0;
+
+    if (da === db) {
+        // prioritize entry before exit
+        if (a.type === 'entry' && b.type !== 'entry') return -1;
+        if (b.type === 'entry' && a.type !== 'entry') return 1;
+        return 0;
+    }
+    return db - da; // newest-first otherwise
+})
                 .map(({_ts, ...rest}) => rest);
 
             // ---------------- TRANSIT ----------------
