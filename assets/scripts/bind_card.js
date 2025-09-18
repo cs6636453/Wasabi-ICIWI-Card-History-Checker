@@ -15,9 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
         let cardValue = cardInput.value.trim().toUpperCase();
 
         // Ensure it starts with "B"
-        if (!cardValue.startsWith("B")) {
-            cardValue = "B" + cardValue;
-        }
+        cardValue = "B" + cardValue;
+        
 
         // Validate pattern: Bx-xxxxx (B + hyphen + 1-5 digits)
         const pattern = /^B[A-Z]-[0-9]{1,5}$/;
