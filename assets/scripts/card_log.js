@@ -494,7 +494,7 @@ let actual_serial;
 
                 let my_icon = document.createElement("span");
                 my_icon.className = "material-symbols-outlined";
-                if (t.type === "bus" || String(t.nStation || '').includes("KTB")) {
+                if (t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN")) {
                     my_icon.innerHTML = "directions_bus";
                 } else {
                     my_icon.innerHTML = "directions_subway";
@@ -512,7 +512,7 @@ let actual_serial;
                 let transit_station_exit = document.createElement("p");
                 transit_station_entry.className = "transit_station";
                 transit_station_exit.className = "transit_station";
-                if (t.type === "bus" || String(t.nStation || '').includes("KTB")) {
+                if (t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN")) {
                     transit_station_entry.innerHTML = "KTB Bus Stop";
                 } else {
                     transit_station_entry.innerHTML = t.nStation;
@@ -561,12 +561,12 @@ let actual_serial;
 
                 // Always show origin dot for both bus and metro
                 transit_drawmap.appendChild(transit_time_entry);
-                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB"))) transit_drawmap.appendChild(my_new_dot);
+                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN"))) transit_drawmap.appendChild(my_new_dot);
                 transit_drawmap.appendChild(my_icon);
                 transit_drawmap.appendChild(transit_station_entry);
 
                 // Only show destination side (dot + icon + station) for non-bus transit
-                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB"))) {
+                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN"))) {
                     transit_drawmap_dest.appendChild(transit_time_exit);
                     transit_drawmap_dest.appendChild(transit_dot);
                     transit_drawmap_dest.appendChild(my_icon.cloneNode(true));
@@ -575,7 +575,7 @@ let actual_serial;
 
                 transit_details.appendChild(transit_date);
                 transit_details.appendChild(transit_drawmap);
-                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB"))) {
+                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN"))) {
                     transit_details.appendChild(transit_line);
                     transit_details.appendChild(transit_drawmap_dest);
                 }
