@@ -515,9 +515,9 @@ let actual_serial;
                 if (t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN")) {
                     transit_station_entry.innerHTML = "KTB Bus Stop";
                 } else {
-                    transit_station_entry.innerHTML = t.nStation ? t.nStation : "Did not tap in";
+                    transit_station_entry.innerHTML = t.nStation ? t.nStation : "";
                 }
-                transit_station_exit.innerHTML = t.xStation ? t.xStation : "Did not tap out";
+                transit_station_exit.innerHTML = t.xStation ? t.xStation : "";
 
                 let transit_drawmap = document.createElement("div");
                 transit_drawmap.className = "transit_drawmap";
