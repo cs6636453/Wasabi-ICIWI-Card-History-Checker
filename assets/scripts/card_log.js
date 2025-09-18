@@ -543,7 +543,7 @@ let actual_serial;
                 transit_osi.className = "transit_osi";
 
                 if (t.osi === true || t.osi === "true") {
-                    transit_osi.innerHTML = "OSI applied & discounted";
+                    transit_osi.innerHTML = "OSI discounted";
                 }
 
                 last_exit_fare = t.balance;
@@ -579,7 +579,7 @@ let actual_serial;
                     transit_details.appendChild(transit_line);
                     transit_details.appendChild(transit_drawmap_dest);
                 }
-                if (fareCalc !== "0.00" || fareCalc !== 0 || fareCalc !== null | fareCalc !== "") transit_fare_detail.appendChild(transit_fare);
+                if (fareCalc !== "0.00" && fareCalc !== 0 && fareCalc !== null && fareCalc !== "") transit_fare_detail.appendChild(transit_fare);
                 if (t.osi === true || t.osi === "true") transit_fare_detail.appendChild(transit_osi);
                 transit_details.appendChild(transit_fare_detail);
                 transit_history.appendChild(transit_details);
