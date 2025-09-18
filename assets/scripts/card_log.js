@@ -457,9 +457,8 @@ let actual_serial;
                         }
                         payment_total.className = "payment_total negative";
                         payment_total.innerHTML = "-£ " + p.fare.toFixed(2);
-                        if (p.fare === 0) {
-                            last_exit_fare = p.balance;
-                        }
+                        
+                        
                         break;
                     case 'payment':
                         span_icon = "directions_bus";
@@ -507,6 +506,9 @@ let actual_serial;
 
                 payment_container.appendChild(payment_details);
             }
+
+if (p.fare === 0) 
+                            last_exit_fare = p.balance;
 
             // <div className="transit_details">
             //     <p className="transit_date">16 Sep 2025</p>
