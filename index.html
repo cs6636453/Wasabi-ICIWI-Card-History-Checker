@@ -121,5 +121,11 @@
             <footer>Data shown is before 31 August 2025 by now.</footer>
         </section>
     </main>
+<script>(function() {
+  const ua = navigator.userAgent;
+  if (/Samsung DeX|Dex/i.test(ua)) {
+    document.body.classList.add("samsung-dex");
+  }
+})();</script>
 </body>
 </html>
