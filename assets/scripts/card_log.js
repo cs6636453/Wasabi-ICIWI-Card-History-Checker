@@ -368,7 +368,7 @@ let actual_serial;
 
             let true_balance = window.iciwiTransit[0];
             let card_balance = document.getElementById("card_balance");
-            if (card_balance && true_balance && window.iciwiTransit[0].type || window.iciwiTransit[1].type !== "refund-card") {
+            if (card_balance && true_balance && payments[0].type !== "refund-card") {
                 card_balance.innerHTML = "£ " + true_balance.balance;
             } else {
                 card_balance.innerHTML = "VOID"
