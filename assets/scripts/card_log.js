@@ -371,7 +371,7 @@ let actual_serial;
             if (card_balance && true_balance) {
                 card_balance.innerHTML = "£ " + true_balance.balance;
             } else {
-                card_balance.innerHTML = "VOID CARD"
+                card_balance.innerHTML = "VOID"
             }
 
             let card_number = document.getElementById("card_number");
