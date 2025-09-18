@@ -460,6 +460,8 @@ let actual_serial;
                         
                         
                         break;
+if (p.fare === 0) 
+                            last_exit_fare = p.balance;
                     case 'payment':
                         span_icon = "directions_bus";
                         span_title = "Bus payment - KTB/TJT";
@@ -471,8 +473,7 @@ let actual_serial;
                         span_title = "Card returned - KTB/TJT";
                         payment_total.className = "payment_total negative";
                         payment_total.innerHTML = "-£ " + p.balance.toFixed(2);
-if (p.fare === 0) 
-                            last_exit_fare = p.balance;
+
                         break;
                     case 'entry':
                         if (p.balance !== last_exit_fare) {
