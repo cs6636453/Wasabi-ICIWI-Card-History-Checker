@@ -41,11 +41,11 @@ let actual_serial;
     }
 
     function fmtTimeLocalFromDate(dateObj, withSeconds = false) {
-    if (!dateObj) return '';
-    const opts = { hour: '2-digit', minute: '2-digit', hour12: false };
-    if (withSeconds) opts.second = '2-digit';
-    return dateObj.toLocaleTimeString([], opts);
-}
+        if (!dateObj) return '';
+        const opts = { hour: '2-digit', minute: '2-digit', hour12: false };
+        if (withSeconds) opts.second = '2-digit';
+        return dateObj.toLocaleTimeString([], opts);
+    }
 
     // normalize osi (always return string 'true'/'false' or '' if missing)
     function normalizeOsi(raw) {
@@ -112,7 +112,13 @@ let actual_serial;
                 else if (m === 'refund-card') type = 'refund-card';
                 else if (m === 'payment') type = 'payment';
 
-                const station = d.nStation || d.xStation || d.from || d.to || d.card || '';
+                // --- FIX: for card-exit prefer xStation (exit station) ---
+                let station;
+                if (m === 'card-exit') {
+                    station = d.xStation || d.nStation || d.from || d.to || d.card || '';
+                } else {
+                    station = d.nStation || d.xStation || d.from || d.to || d.card || '';
+                }
 
                 const fareNum = (d.fare !== undefined && d.fare !== null) ? parseFloat(d.fare) : null;
 
@@ -189,7 +195,7 @@ let actual_serial;
                         }
                         if (prevEntry) {
                             const entryStation = prevEntry.data && prevEntry.data.nStation || '';
-                            const exitStation = ev.data && ev.data.xStation || '';
+                            const exitStation = ev.data && ev.data.nStation || '';
                             let prevExitFareZero = true;
                             for (let j = i - 1; j >= 0; j--) {
                                 if (cardEvents[j].message === 'card-exit') {
@@ -360,52 +366,16 @@ let actual_serial;
             console.log('PAYMENT HISTORY (newest-first):', window.iciwiPayments);
             console.log('TRANSIT HISTORY (newest-first by ENTRY time if entry exists else EXIT time):', window.iciwiTransit);
 
-            // for (let i = 0; i < window.iciwiPayments.length; i++) {
-            //     const p = window.iciwiPayments[i];
-            //     console.log(
-            //         "Index:", i,
-            //         "Type:", p.type,
-            //         "Date:", p.date,
-            //         "Time:", p.time,
-            //         "Station:", p.station,
-            //         "Amount:", p.amount,
-            //         "Fare:", p.fare,
-            //         "Balance:", p.balance
-            //     );
-            // }
-            //
-            // for (let i = 0; i < window.iciwiTransit.length; i++) {
-            //     const t = window.iciwiTransit[i];
-            //     console.log(
-            //         "Index:", i,
-            //         "Type:", t.type,
-            //         "Date:", t.date,
-            //         "DateExit:", t.dateExit,
-            //         "Entry:", t.nTime, t.nStation,
-            //         "Exit:", t.xTime, t.xStation,
-            //         "Fare:", t.fare,
-            //         "Balance:", t.balance,
-            //         "OSI:", t.osi
-            //     );
-            // }
-
             let true_balance = window.iciwiTransit[0];
             let card_balance = document.getElementById("card_balance");
-            card_balance.innerHTML = "£ " + true_balance.balance;
+            if (card_balance && true_balance) {
+                card_balance.innerHTML = "£ " + true_balance.balance;
+            }
 
             let card_number = document.getElementById("card_number");
-            card_number.innerHTML = "• " + actual_serial.substring(3);
-
-            // <div className="payment_details">
-            //     <span className="material-symbols-outlined">tram</span>
-            //     <div className="payment_text">
-            //         <p className="payment_datetime">16 Sep 2025 | 21:31</p>
-            //         <p className="payment_title">Fare payment - Downtown</p>
-            //     </div>
-            //     <p className="payment_total negative">
-            //         -£ 3.00
-            //     </p>
-            // </div>
+            if (card_number && actual_serial) {
+                card_number.innerHTML = "• " + actual_serial.substring(3);
+            }
 
             let payment_container = document.getElementById("payment_history");
             let last_exit_fare = 0;
@@ -414,7 +384,6 @@ let actual_serial;
                 const p = window.iciwiPayments[i];
 
                 let hr = document.createElement("hr");
-
 
                 let payment_details = document.createElement("div");
                 payment_details.className = "payment_details";
@@ -448,31 +417,28 @@ let actual_serial;
                         payment_total.innerHTML = "+£ " + p.amount.toFixed(2);
                         break;
                     case 'exit':
-                        if (p.station.includes("KTB")) {
+                        if (String(p.station || '').includes("KTB")) {
                             span_icon = "directions_bus";
                             span_title = "Fare payment - KTB/TJT";
                         } else {
                             span_icon = "tram";
-                            span_title = "Fare payment - " + p.station;
+                            span_title = "Fare payment - " + (p.station || '');
                         }
                         payment_total.className = "payment_total negative";
-                        payment_total.innerHTML = "-£ " + p.fare.toFixed(2);
+                        payment_total.innerHTML = "-£ " + (typeof p.fare === 'number' ? p.fare.toFixed(2) : p.fare);
                         if (p.fare === 0) last_exit_fare = p.balance;
-                        
                         break;
-
                     case 'payment':
                         span_icon = "directions_bus";
                         span_title = "Bus payment - KTB/TJT";
                         payment_total.className = "payment_total negative";
-                        payment_total.innerHTML = "-£ " + p.fare.toFixed(2);
+                        payment_total.innerHTML = "-£ " + (typeof p.fare === 'number' ? p.fare.toFixed(2) : p.fare);
                         break;
                     case 'refund-card':
                         span_icon = "smart_card_reader_off";
                         span_title = "Card returned - KTB/TJT";
                         payment_total.className = "payment_total negative";
-                        payment_total.innerHTML = "-£ " + p.balance.toFixed(2);
-
+                        payment_total.innerHTML = "-£ " + (typeof p.balance === 'number' ? p.balance.toFixed(2) : p.balance);
                         break;
                     case 'entry':
                         if (p.balance !== last_exit_fare) {
@@ -494,9 +460,7 @@ let actual_serial;
                 }
 
                 type_icon.innerHTML = span_icon;
-
                 payment_datetime.innerHTML = p.date + " | " + p.time;
-
                 payment_title.innerHTML = span_title;
 
                 payment_text.appendChild(payment_datetime);
@@ -508,30 +472,6 @@ let actual_serial;
 
                 payment_container.appendChild(payment_details);
             }
-
-
-
-            // <div className="transit_details">
-            //     <p className="transit_date">16 Sep 2025</p>
-            //     <div className="transit_drawmap">
-            //         <p className="transit_time">21:59:00</p>
-            //         <div className="transit_dot"></div>
-            //         <span className="material-symbols-outlined">directions_subway</span>
-            //         <p className="transit_station">Downtown</p>
-            //     </div>
-            //     <div className="transit_line"></div>
-            //     <div className="transit_drawmap drawmap_dest">
-            //         <p className="transit_time">22:00:00</p>
-            //         <div className="transit_dot"></div>
-            //         <span className="material-symbols-outlined">directions_subway</span>
-            //         <p className="transit_station">Legacy Road</p>
-            //     </div>
-            //     <div className="transit_pass">Student Concession Pass used</div> SKIP
-            //     <div className="transit_fare_detail">
-            //         <div className="transit_fare">£ 3.00</div>
-            //         <div className="transit_osi">OSI discounted</div>
-            //     </div>
-            // </div>
 
             let transit_history = document.getElementById("transit_history");
             last_exit_fare = 0;
@@ -552,7 +492,7 @@ let actual_serial;
 
                 let my_icon = document.createElement("span");
                 my_icon.className = "material-symbols-outlined";
-                if (t.type === "bus" || t.nStation.includes("KTB")) {
+                if (t.type === "bus" || String(t.nStation || '').includes("KTB")) {
                     my_icon.innerHTML = "directions_bus";
                 } else {
                     my_icon.innerHTML = "directions_subway";
@@ -570,7 +510,7 @@ let actual_serial;
                 let transit_station_exit = document.createElement("p");
                 transit_station_entry.className = "transit_station";
                 transit_station_exit.className = "transit_station";
-                if (t.type === "bus" || t.nStation.includes("KTB")) {
+                if (t.type === "bus" || String(t.nStation || '').includes("KTB")) {
                     transit_station_entry.innerHTML = "KTB Bus Stop";
                 } else {
                     transit_station_entry.innerHTML = t.nStation;
@@ -593,9 +533,8 @@ let actual_serial;
                 transit_fare.className = "transit_fare";
                 let fareCalc = t.fare;
                 if (i !== 0 && t.fare === 0 && t.fare !== null && t.fare !== "") fareCalc = Math.abs(t.balance-last_exit_fare).toFixed(2);
-                else if (t.fare !== null && t.fare !== "") fareCalc = t.fare.toFixed(2);
+                else if (t.fare !== null && t.fare !== "") fareCalc = (typeof t.fare === 'number' ? t.fare.toFixed(2) : t.fare);
 
-                
                 transit_fare.innerHTML = "£ "+fareCalc;
 
                 let transit_osi = document.createElement("div");
@@ -618,32 +557,23 @@ let actual_serial;
                 my_new_icon.innerHTML = "directions_subway";
                 my_new_icon.className = "material-symbols-outlined";
 
+                // Always show origin dot for both bus and metro
                 transit_drawmap.appendChild(transit_time_entry);
-                if (t.type === "bus" || t.nStation.includes("KTB")) {
-                    transit_drawmap.appendChild(my_icon);
-                    console.log(i+"bus");
-                } else {
-                    console.log(i+"bug");
-                    transit_drawmap.appendChild(my_new_dot);
-                    transit_drawmap.appendChild(my_new_icon);
-                }
-
+                transit_drawmap.appendChild(my_new_dot);
+                transit_drawmap.appendChild(my_icon);
                 transit_drawmap.appendChild(transit_station_entry);
 
-                if (t.type === "bus" || t.nStation.includes("KTB")) {
-                    console.log("bus");
-                } else {
+                // Only show destination side (dot + icon + station) for non-bus transit
+                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB"))) {
                     transit_drawmap_dest.appendChild(transit_time_exit);
                     transit_drawmap_dest.appendChild(transit_dot);
-                    transit_drawmap_dest.appendChild(my_icon);
+                    transit_drawmap_dest.appendChild(my_icon.cloneNode(true));
                     transit_drawmap_dest.appendChild(transit_station_exit);
                 }
 
                 transit_details.appendChild(transit_date);
                 transit_details.appendChild(transit_drawmap);
-                if (t.type === "bus" || t.nStation.includes("KTB")) {
-                    console.log("bus");
-                } else {
+                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB"))) {
                     transit_details.appendChild(transit_line);
                     transit_details.appendChild(transit_drawmap_dest);
                 }
