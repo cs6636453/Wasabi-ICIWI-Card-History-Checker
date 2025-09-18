@@ -356,14 +356,17 @@ header img {
 
 #payment_history {
     /*display: none;*/
+    margin-bottom: 100px;
 }
 
 #transit_history {
     /*display: none;*/
+margin-bottom: 100px;
 }
 
 #my_account {
     /*display: none;*/
+margin-bottom: 100px;
 }
 
 .nav_text {
@@ -528,6 +531,7 @@ header img {
     #payment_history, #transit_history, #my_account {
         margin-bottom: 0;
         padding-bottom: 0;
+margin-bottom: 100px;
     }
 
     .card_pc {
