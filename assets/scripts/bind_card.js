@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Ensure it starts with "B"
         if (!cardValue.startsWith("B")) {
-            cardValue = "B" + cardValue.replace(/^B*/, '');
+            cardValue = "B" + cardValue;
         }
 
-        // Validate pattern: B-xxxxx (B + hyphen + 1-5 digits)
+        // Validate pattern: Bx-xxxxx (B + hyphen + 1-5 digits)
         const pattern = /^B[A-Z]-[0-9]{1,5}$/;
         if (!pattern.test(cardValue)) {
             hintError.textContent = "Sorry, it looks like your card is invalid. Please try again.";
