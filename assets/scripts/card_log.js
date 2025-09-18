@@ -502,11 +502,11 @@ let actual_serial;
 
                 let transit_time_entry = document.createElement("p");
                 transit_time_entry.className = "transit_time";
-                transit_time_entry.innerHTML = t.nTime;
+                transit_time_entry.innerHTML = t.nTime ? t.nTime : "N/A";
 
                 let transit_time_exit = document.createElement("p");
                 transit_time_exit.className = "transit_time";
-                transit_time_exit.innerHTML = t.xTime;
+                transit_time_exit.innerHTML = t.xTime ? t.xTime : "N/A";
 
                 let transit_station_entry = document.createElement("p");
                 let transit_station_exit = document.createElement("p");
@@ -515,9 +515,9 @@ let actual_serial;
                 if (t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN")) {
                     transit_station_entry.innerHTML = "KTB Bus Stop";
                 } else {
-                    transit_station_entry.innerHTML = t.nStation;
+                    transit_station_entry.innerHTML = t.nStation ? t.nStation : "Did not tap in";
                 }
-                transit_station_exit.innerHTML = t.xStation;
+                transit_station_exit.innerHTML = t.xStation ? t.xStation : "Did not tap out";
 
                 let transit_drawmap = document.createElement("div");
                 transit_drawmap.className = "transit_drawmap";
