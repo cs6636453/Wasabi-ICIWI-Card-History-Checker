@@ -291,7 +291,7 @@ cardEvents.sort((a, b) => {
             exitDateObj: exDate
         });
     }
-    // ... rest remains same else {
+    else {
                         // exit without prior entry (shouldn't happen, but handle gracefully) -> metro exit-only
                         const exDate = evt.tsDate;
                         transitPairs.push({
