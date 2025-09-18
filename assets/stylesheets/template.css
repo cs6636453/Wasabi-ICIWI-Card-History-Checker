@@ -370,6 +370,9 @@ header img {
     display: none;
 }
 
+/* ============================= */
+/* Desktop layout adjustments    */
+/* ============================= */
 @media only screen and (min-width: 1024px) {
 
     .nav_text {
@@ -457,16 +460,28 @@ header img {
         box-sizing: border-box;
     }
 
+    /* 🔧 FIXED PART BELOW */
     #transit_history,
     #payment_history,
     #my_account {
-        width: 50%;               /* right panel width */
-        margin-left: 50%;         /* move it to the right of the fixed card */
+        width: 50%;               
+        margin-left: 50%;         
         padding: 15px;
         box-sizing: border-box;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
+        padding-bottom: 50px; /* fallback for normal desktops */
     }
 
+    /* Safe-area for tablets with taskbars */
+    @supports (padding: max(0px)) {
+      #transit_history,
+      #payment_history,
+      #my_account {
+        padding-bottom: max(50px, env(safe-area-inset-bottom));
+      }
+    }
+    /* 🔧 END FIX */
+    
     #go_account {
         display: none;
     }
@@ -534,6 +549,8 @@ header img {
         margin-top: 1px;
     }
 }
+
+/* ===== Rest of your CSS unchanged (loader, popup, etc.) ===== */
 
 /* Fullscreen loader overlay */
 #loader {
