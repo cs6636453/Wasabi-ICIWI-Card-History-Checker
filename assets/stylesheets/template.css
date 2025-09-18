@@ -360,17 +360,16 @@ header img {
 
 #payment_history {
     /*display: none;*/
-    margin-bottom: 100px;
+    
 }
 
 #transit_history {
     /*display: none;*/
-margin-bottom: 100px;
+
 }
 
 #my_account {
-    /*display: none;*/
-margin-bottom: 100px;
+    /*display: none */
 }
 
 .nav_text {
