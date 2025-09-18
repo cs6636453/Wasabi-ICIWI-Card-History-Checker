@@ -589,8 +589,8 @@ let actual_serial;
                 let transit_fare = document.createElement("div");
                 transit_fare.className = "transit_fare";
                 let fareCalc = t.fare;
-                if (i !== 0 && t.fare === 0) fareCalc = Math.abs(t.balance-last_exit_fare);
-                else fareCalc = t.fare;
+                if (i !== 0 && t.fare === 0) fareCalc = Math.abs(t.balance-last_exit_fare).toFixed(2);
+                else fareCalc = t.fare.toFixed(2);
 
                 
                 transit_fare.innerHTML = "£ "+fareCalc;
