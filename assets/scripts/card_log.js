@@ -471,6 +471,8 @@ let actual_serial;
                         span_title = "Card returned - KTB/TJT";
                         payment_total.className = "payment_total negative";
                         payment_total.innerHTML = "-£ " + p.balance.toFixed(2);
+if (p.fare === 0) 
+                            last_exit_fare = p.balance;
                         break;
                     case 'entry':
                         if (p.balance !== last_exit_fare) {
@@ -507,8 +509,7 @@ let actual_serial;
                 payment_container.appendChild(payment_details);
             }
 
-if (p.fare === 0) 
-                            last_exit_fare = p.balance;
+
 
             // <div className="transit_details">
             //     <p className="transit_date">16 Sep 2025</p>
