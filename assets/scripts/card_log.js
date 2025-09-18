@@ -422,7 +422,7 @@ let actual_serial;
                             span_title = "Fare payment - KTB/TJT";
                         } else {
                             span_icon = "tram";
-                            span_title = "Fare payment - " + (p.station || '');
+                            span_title = "Transit - " + (p.station || '');
                         }
                         payment_total.className = "payment_total negative";
                         payment_total.innerHTML = "-£ " + (typeof p.fare === 'number' ? p.fare.toFixed(2) : p.fare);
