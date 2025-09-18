@@ -464,6 +464,7 @@ header img {
         margin-left: 50%;         /* move it to the right of the fixed card */
         padding: 15px;
         box-sizing: border-box;
+        margin-bottom: 50px;
     }
 
     #go_account {
