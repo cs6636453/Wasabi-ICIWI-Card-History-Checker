@@ -422,7 +422,13 @@ let actual_serial;
                         if (String(p.station || '').includes("KTB")) {
                             span_icon = "directions_bus";
                             span_title = "Fare payment - KTB/TJT";
-                        } else {
+                        } 
+else if (String(t.nStation || '').includes("BaanRattana")) {
+ continue;
+} else if (String(t.nStation || '').includes("LibraryKNUT")) {
+ continue;
+}
+else {
                             span_icon = "tram";
                             span_title = "Transit - " + (p.station || '');
                         }
@@ -496,7 +502,13 @@ let actual_serial;
                 my_icon.className = "material-symbols-outlined";
                 if (t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN")) {
                     my_icon.innerHTML = "directions_bus";
-                } else {
+                } 
+else if (String(t.nStation || '').includes("BaanRattana")) {
+my_icon.innerHTML = "home";
+} else if (String(t.nStation || '').includes("LibraryKNUT")) {
+my_icon.innerHTML = "school";
+}
+else {
                     my_icon.innerHTML = "directions_subway";
                 }
 
@@ -514,7 +526,15 @@ let actual_serial;
                 transit_station_exit.className = "transit_station";
                 if (t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN")) {
                     transit_station_entry.innerHTML = "KTB Bus Stop";
-                } else {
+                }
+
+else if (String(t.nStation || '').includes("BaanRattana")) {
+ transit_station_entry.innerHTML = "Baan Rattana Condo";
+} else if (String(t.nStation || '').includes("LibraryKNUT")) {
+  transit_station_entry.innerHTML = "KNUT Central Library";
+}
+
+ else {
                     transit_station_entry.innerHTML = t.nStation ? t.nStation : "";
                 }
                 transit_station_exit.innerHTML = t.xStation ? t.xStation : "";
@@ -561,12 +581,12 @@ let actual_serial;
 
                 // Always show origin dot for both bus and metro
                 transit_drawmap.appendChild(transit_time_entry);
-                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN"))) transit_drawmap.appendChild(my_new_dot);
+                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN") || String(t.nStation || '').includes("LibraryKNUT") || String(t.nStation || '').includes("BaanRattana"))) transit_drawmap.appendChild(my_new_dot);
                 transit_drawmap.appendChild(my_icon);
                 transit_drawmap.appendChild(transit_station_entry);
 
                 // Only show destination side (dot + icon + station) for non-bus transit
-                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN"))) {
+                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN") || String(t.nStation || '').includes("LibraryKNUT") || String(t.nStation || '').includes("BaanRattana"))) {
                     transit_drawmap_dest.appendChild(transit_time_exit);
                     transit_drawmap_dest.appendChild(transit_dot);
                     transit_drawmap_dest.appendChild(my_icon.cloneNode(true));
@@ -575,7 +595,7 @@ let actual_serial;
 
                 transit_details.appendChild(transit_date);
                 transit_details.appendChild(transit_drawmap);
-                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN"))) {
+                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN") || String(t.nStation || '').includes("LibraryKNUT") || String(t.nStation || '').includes("BaanRattana"))) {
                     transit_details.appendChild(transit_line);
                     transit_details.appendChild(transit_drawmap_dest);
                 }
