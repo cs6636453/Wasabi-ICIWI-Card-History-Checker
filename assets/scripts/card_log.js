@@ -423,9 +423,9 @@ let actual_serial;
                             span_icon = "directions_bus";
                             span_title = "Fare payment - KTB/TJT";
                         } 
-else if (String(t.nStation || '').includes("BaanRattana")) {
+else if (String(p.station || '').includes("BaanRattana")) {
  continue;
-} else if (String(t.nStation || '').includes("LibraryKNUT")) {
+} else if (String(p.station || '').includes("LibraryKNUT")) {
  continue;
 }
 else {
