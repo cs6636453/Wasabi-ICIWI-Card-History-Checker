@@ -534,7 +534,12 @@ header img {
         display: block;
     }
 
-    #payment_history, #transit_history, #my_account {
+    #transit_history {
+        margin-bottom: 10px;
+        padding-bottom: 0;
+    }
+
+    #payment_history, #my_account {
         margin-bottom: 0;
         padding-bottom: 0;
     }
