@@ -419,15 +419,16 @@ let actual_serial;
                         payment_total.innerHTML = "+£ " + p.amount.toFixed(2);
                         break;
                     case 'exit':
-                        if (String(p.station || '').includes("KTB")) {
+                        if (String(p.station || '').includes("LibraryKNUT")) {
+ continue;
+}
+                        else if (String(p.station || '').includes("KTB") || String(p.station || '').includes("Bus") || String(p.station || '').includes("KN")) {
                             span_icon = "directions_bus";
                             span_title = "Fare payment - KTB/TJT";
                         } 
 else if (String(p.station || '').includes("BaanRattana")) {
  continue;
-} else if (String(p.station || '').includes("LibraryKNUT")) {
- continue;
-} else if (String(p.station || '').includes("CentralLibrary")) {
+}  else if (String(p.station || '').includes("CentralLibrary")) {
   continue;
 }
 else {
@@ -502,14 +503,15 @@ else {
 
                 let my_icon = document.createElement("span");
                 my_icon.className = "material-symbols-outlined";
-                if (t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN")) {
+if (String(t.nStation || '').includes("LibraryKNUT")) {
+my_icon.innerHTML = "school";
+} 
+                else if (t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN")) {
                     my_icon.innerHTML = "directions_bus";
                 } 
 else if (String(t.nStation || '').includes("BaanRattana")) {
 my_icon.innerHTML = "home";
-} else if (String(t.nStation || '').includes("LibraryKNUT")) {
-my_icon.innerHTML = "school";
-}else if (String(t.nStation || '').includes("CentralLibrary")) {
+} else if (String(t.nStation || '').includes("CentralLibrary")) {
  my_icon.innerHTML = "school";
 }
 else {
@@ -528,15 +530,16 @@ else {
                 let transit_station_exit = document.createElement("p");
                 transit_station_entry.className = "transit_station";
                 transit_station_exit.className = "transit_station";
-                if (t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN")) {
+ if (String(t.nStation || '').includes("LibraryKNUT")) {
+  transit_station_entry.innerHTML = "KNUT Central Library";
+}
+               else if (t.type === "bus" || String(t.nStation || '').includes("KTB") || String(t.nStation || '').includes("Bus") || String(t.nStation || '').includes("KN")) {
                     transit_station_entry.innerHTML = "KTB Bus Stop";
                 }
 
 else if (String(t.nStation || '').includes("BaanRattana")) {
  transit_station_entry.innerHTML = "Baan Rattana Condo";
-} else if (String(t.nStation || '').includes("LibraryKNUT")) {
-  transit_station_entry.innerHTML = "KNUT Central Library";
-}else if (String(t.nStation || '').includes("CentralLibrary")) {
+} else if (String(t.nStation || '').includes("CentralLibrary")) {
   transit_station_entry.innerHTML = "KNUT Central Library";
 }
 
