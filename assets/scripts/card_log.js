@@ -469,8 +469,8 @@ else {
                     case 'entry':
                         if (p.balance !== last_exit_fare) {
                             console.log((p.balance - last_exit_fare).toFixed(2));
-                            span_icon = "hourglass_bottom";
-                            span_title = "Debit hold - ICIWI";
+                            span_icon = "settings_backup_restore";
+                            span_title = "Debt recovery - ICIWI";
                             payment_total.className = "payment_total negative";
                             payment_total.innerHTML = "-£ " + Math.abs(p.balance - last_exit_fare).toFixed(2);
                         } else {
