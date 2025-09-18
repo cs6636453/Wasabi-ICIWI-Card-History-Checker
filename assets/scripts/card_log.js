@@ -561,7 +561,7 @@ let actual_serial;
 
                 // Always show origin dot for both bus and metro
                 transit_drawmap.appendChild(transit_time_entry);
-                transit_drawmap.appendChild(my_new_dot);
+                if (!(t.type === "bus" || String(t.nStation || '').includes("KTB"))) transit_drawmap.appendChild(my_new_dot);
                 transit_drawmap.appendChild(my_icon);
                 transit_drawmap.appendChild(transit_station_entry);
 
