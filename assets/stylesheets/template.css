@@ -235,6 +235,7 @@ header img {
     color: black;
     margin-top: 7px;
     margin-left: 30px;
+    margin-right: 5px;
 }
 
 .transit_osi {
@@ -246,7 +247,7 @@ header img {
     padding: 0 7px;
     color: white;
     margin-top: 7px;
-    margin-left: 5px;
+    margin-left: 0;
     align-items: center;
 }
 
