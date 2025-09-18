@@ -472,14 +472,7 @@ header img {
         padding-bottom: 50px; /* fallback for normal desktops */
     }
 
-    /* Safe-area for tablets with taskbars */
-    @supports (padding: max(0px)) {
-      #transit_history,
-      #payment_history,
-      #my_account {
-        padding-bottom: max(50px, env(safe-area-inset-bottom));
-      }
-    }
+    /* Devices with proper safe area (iOS, Android phone
     /* 🔧 END FIX */
     
     #go_account {
@@ -548,6 +541,20 @@ header img {
     .card_input input {
         margin-top: 1px;
     }
+
+body.samsung-dex #transit_history,
+  body.samsung-dex #payment_history,
+  body.samsung-dex #my_account {
+    padding-bottom: 100px !important; /* extra space for taskbar */
+  }
+}
+/* ---- Samsung Dex fullscreen hack ---- */
+@media screen and (min-width: 800px) {
+  body.samsung-dex #transit_history,
+  body.samsung-dex #payment_history,
+  body.samsung-dex #my_account {
+    padding-bottom: 100px !important; /* extra space for taskbar */
+  }
 }
 
 /* ===== Rest of your CSS unchanged (loader, popup, etc.) ===== */
