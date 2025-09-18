@@ -94,7 +94,21 @@ let actual_serial;
             });
 
             // sort chronological ascending for pairing & heuristics
-            cardEvents.sort((a, b) => a.tsDate - b.tsDate);
+            // sort chronological ascending for pairing & heuristics
+cardEvents.sort((a, b) => {
+    const diff = a.tsDate - b.tsDate;
+    if (diff !== 0) return diff;
+
+    // tie-breaker: entry before exit
+    const typeA = a.message;
+    const typeB = b.message;
+
+    if (typeA === 'card-entry' && typeB === 'card-exit') return -1;
+    if (typeA === 'card-exit' && typeB === 'card-entry') return 1;
+
+    // otherwise keep original order
+    return 0;
+});
 
             // ---------------- PAYMENTS ----------------
             const paymentsChron = [];
