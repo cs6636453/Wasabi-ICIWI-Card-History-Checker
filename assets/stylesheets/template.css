@@ -8,6 +8,10 @@ body {
     font-style: normal;
 }
 
+title.desktop {
+    display: none;
+}
+
 nav {
     position: fixed;
     bottom: 0;
@@ -392,6 +396,9 @@ margin-bottom: 100px;
     nav a span {
         margin-right: 8px;    /* optional, space between icon and text */
     }
+
+    title.mobile { display: none; }
+    title.desktop { display: block; }
 
     #card {
         position: fixed;    /* fixes card on the left */
