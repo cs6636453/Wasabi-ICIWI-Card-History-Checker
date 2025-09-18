@@ -189,7 +189,7 @@ let actual_serial;
                         }
                         if (prevEntry) {
                             const entryStation = prevEntry.data && prevEntry.data.nStation || '';
-                            const exitStation = ev.data && ev.data.nStation || '';
+                            const exitStation = ev.data && ev.data.xStation || '';
                             let prevExitFareZero = true;
                             for (let j = i - 1; j >= 0; j--) {
                                 if (cardEvents[j].message === 'card-exit') {
