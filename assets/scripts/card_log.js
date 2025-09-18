@@ -258,39 +258,40 @@ cardEvents.sort((a, b) => {
                 if (m === 'card-entry') {
                     unpairedEntries.push({evt, used: false});
                 } else if (m === 'card-exit') {
-                    // pair to closest prior unpaired entry where entry.tsDate < exit.tsDate
-                    let matchIdx = -1;
-                    for (let k = unpairedEntries.length - 1; k >= 0; k--) {
-                        const cand = unpairedEntries[k];
-                        if (!cand.used && cand.evt.tsDate && cand.evt.tsDate < evt.tsDate) {
-                            matchIdx = k;
-                            break;
-                        }
-                    }
+    // pair to closest prior unpaired entry where entry.tsDate <= exit.tsDate
+    let matchIdx = -1;
+    for (let k = unpairedEntries.length - 1; k >= 0; k--) {
+        const cand = unpairedEntries[k];
+        if (!cand.used && cand.evt.tsDate && cand.evt.tsDate <= evt.tsDate) {
+            matchIdx = k;
+            break;
+        }
+    }
 
-                    if (matchIdx >= 0) {
-                        const entryObj = unpairedEntries[matchIdx];
-                        entryObj.used = true;
-                        const ent = entryObj.evt;
-                        const ex = evt;
-                        const entDate = ent.tsDate;
-                        const exDate = ex.tsDate;
+    if (matchIdx >= 0) {
+        const entryObj = unpairedEntries[matchIdx];
+        entryObj.used = true;
+        const ent = entryObj.evt;
+        const ex = evt;
+        const entDate = ent.tsDate;
+        const exDate = ex.tsDate;
 
-                        transitPairs.push({
-                            type: 'metro',
-                            date: fmtDateLocalFromDate(entDate || exDate),
-                            dateExit: fmtDateLocalFromDate(exDate || entDate),
-                            nTime: fmtTimeLocalFromDate(entDate, true),
-                            nStation: ent.data && ent.data.nStation || '',
-                            xTime: fmtTimeLocalFromDate(exDate, true),
-                            xStation: ex.data && ex.data.xStation || '',
-                            fare: (ex.data && ex.data.fare !== undefined) ? Number(parseFloat(ex.data.fare).toFixed(2)) : 0.00,
-                            osi: normalizeOsi(ex.data && ex.data.osi),
-                            balance: (ex.data && ex.data.value !== undefined) ? Number(parseFloat(ex.data.value).toFixed(2)) : ((ent.data && ent.data.value !== undefined) ? Number(parseFloat(ent.data.value).toFixed(2)) : ''),
-                            entryDateObj: entDate,
-                            exitDateObj: exDate
-                        });
-                    } else {
+        transitPairs.push({
+            type: 'metro',
+            date: fmtDateLocalFromDate(entDate || exDate),
+            dateExit: fmtDateLocalFromDate(exDate || entDate),
+            nTime: fmtTimeLocalFromDate(entDate, true),
+            nStation: ent.data && ent.data.nStation || '',
+            xTime: fmtTimeLocalFromDate(exDate, true),
+            xStation: ex.data && ex.data.xStation || '',
+            fare: (ex.data && ex.data.fare !== undefined) ? Number(parseFloat(ex.data.fare).toFixed(2)) : 0.00,
+            osi: normalizeOsi(ex.data && ex.data.osi),
+            balance: (ex.data && ex.data.value !== undefined) ? Number(parseFloat(ex.data.value).toFixed(2)) : ((ent.data && ent.data.value !== undefined) ? Number(parseFloat(ent.data.value).toFixed(2)) : ''),
+            entryDateObj: entDate,
+            exitDateObj: exDate
+        });
+    }
+    // ... rest remains same else {
                         // exit without prior entry (shouldn't happen, but handle gracefully) -> metro exit-only
                         const exDate = evt.tsDate;
                         transitPairs.push({
