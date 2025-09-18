@@ -71,5 +71,12 @@
         <button value="Bind this card" id="bind_button">Bind this card</button>
     </section>
 </main>
+<script>(function() {
+  const ua = navigator.userAgent;
+  if (/Samsung DeX|Dex/i.test(ua)) {
+    document.body.classList.add("samsung-dex");
+  }
+})();</script>
+
 </body>
 </html>
