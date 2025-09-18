@@ -224,6 +224,7 @@ header img {
 
 .transit_fare_detail {
     display: flex;
+    margin-left: 30px;
 }
 
 .transit_fare {
@@ -234,7 +235,6 @@ header img {
     padding: 0 7px;
     color: black;
     margin-top: 7px;
-    margin-left: 30px;
     margin-right: 5px;
 }
 
