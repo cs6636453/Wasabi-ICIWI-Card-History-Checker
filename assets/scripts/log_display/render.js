@@ -140,7 +140,7 @@ function transit_render(raw_text) {
         transit_osi.innerHTML = "OSI discounted";
         raw_text[i][4] && transit_details.appendChild(transit_invalid);
         raw_text[i][5] && transit_details.appendChild(transit_pass);
-        raw_text[i][6] !== 0 && transit_fare_detail.appendChild(transit_fare);
+        +raw_text[i][6] !== 0 && transit_fare_detail.appendChild(transit_fare);
         raw_text[i][7] && transit_fare_detail.appendChild(transit_osi);
         transit_details.appendChild(transit_fare_detail);
         transit_history.appendChild(transit_details);
