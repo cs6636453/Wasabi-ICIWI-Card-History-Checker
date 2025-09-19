@@ -101,7 +101,7 @@ async function fetch_log() {
         let result = `01/${month}/${year}`;
         console.log(result);
 
-        result = "Exp. "+result;
+        result = "Exp. "+result.slice(3);
 
         console.log(balance);
         console.log(name);
