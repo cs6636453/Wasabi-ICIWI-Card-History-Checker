@@ -448,8 +448,13 @@ header img {
         font-size: 30px;
     }
 
+    #card p#expiry_date {
+        top: 164px;
+        margin-left: 100px;
+    }
+
     #card p#card_number {
-        top: 190px; /* 155px */
+        top: 155px; /* 155px */
     }
 
     #card p#card_name {
