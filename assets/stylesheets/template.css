@@ -575,6 +575,21 @@ header img {
         margin-bottom: 0;
         padding-bottom: 0;
     }
+    /* Loader inside Payment page only */
+    #payment_history #loader_payment,
+    #transit_history #loader_transit {
+        position: absolute;
+        top: 0;            /* start at top of section */
+        left: 0;
+        width: 100%;
+        /* height: auto; */ /* let content determine height */
+        min-height: 600px;  /* optional if you want a minimum height */
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
 
     .card_pc {
         display: block;
