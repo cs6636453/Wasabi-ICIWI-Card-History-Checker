@@ -125,7 +125,7 @@ header img {
 }
 
 #transit_history, #my_account {
-    margin: 0 15px 100px;
+    margin: 0 15px 95px;
 }
 
 #desktop_header {
@@ -150,7 +150,7 @@ header img {
 }
 
 #payment_history {
-    margin: 0 15px 95px;
+    margin: 0 15px 85px;
 }
 
 #my_account {
@@ -567,7 +567,7 @@ header img {
     }
 
     #transit_history {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         padding-bottom: 0;
     }
 
