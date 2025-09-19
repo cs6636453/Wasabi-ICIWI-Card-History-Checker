@@ -150,7 +150,7 @@ header img {
 }
 
 #payment_history {
-    margin: 0 15px 85px;
+    margin: 0 15px 95px;
 }
 
 #my_account {
@@ -387,7 +387,7 @@ header img {
 
 #payment_history {
     /*display: none;*/
-    
+
 }
 
 #transit_history {
@@ -505,7 +505,7 @@ header img {
     #transit_history,
     #payment_history,
     #my_account {
-        width: 50%;               
+        width: 50%;
         margin-left: 50%;
         box-sizing: border-box;
         /* margin-bottom: 50px; */
@@ -515,7 +515,7 @@ header img {
 
     /* Devices with proper safe area (iOS, Android phone
     /* 🔧 END FIX */
-    
+
     #go_account {
         display: none;
     }
@@ -588,20 +588,9 @@ header img {
         margin-top: 1px;
     }
 
-body.samsung-dex #transit_history,
-  body.samsung-dex #payment_history,
-  body.samsung-dex #my_account {
-    padding-bottom: 100px !important; /* extra space for taskbar */
-  }
+
 }
-/* ---- Samsung Dex fullscreen hack ---- */
-@media screen and (min-width: 800px) {
-  body.samsung-dex #transit_history,
-  body.samsung-dex #payment_history,
-  body.samsung-dex #my_account {
-    padding-bottom: 100px !important; /* extra space for taskbar */
-  }
-}
+
 
 /* ===== Rest of your CSS unchanged (loader, popup, etc.) ===== */
 
@@ -631,20 +620,24 @@ body.samsung-dex #transit_history,
     position: relative; /* make them positioning context for their loaders */
 }
 
+hr {
+    border: none;           /* remove default border */
+    border-top: 1px solid lightgray;            /* line thickness */
+}
+
 /* Loader inside Payment page only */
 #payment_history #loader_payment,
 #transit_history #loader_transit {
     position: absolute;
-    top: 140px;
+    top: 0;            /* start at top of section */
     left: 0;
-    width: 100%;   /* now = 100% of their own section only */
-    height: 100%;  /* fill only their section */
-    background: white;
+    width: 100%;
+    /* height: auto; */ /* let content determine height */
+    min-height: 300px;  /* optional if you want a minimum height */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 
