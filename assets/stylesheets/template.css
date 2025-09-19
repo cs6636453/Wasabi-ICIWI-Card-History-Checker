@@ -584,7 +584,7 @@ header img {
         width: 100%;
         /* height: auto; */ /* let content determine height */
         min-height: 600px;  /* optional if you want a minimum height */
-        margin-top: 200px;
+        margin-top: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -648,7 +648,7 @@ hr {
     left: 0;
     width: 100%;
     /* height: auto; */ /* let content determine height */
-    min-height: 300px;  /* optional if you want a minimum height */
+    min-height: 350px;  /* optional if you want a minimum height */
     display: flex;
     justify-content: center;
     align-items: center;
