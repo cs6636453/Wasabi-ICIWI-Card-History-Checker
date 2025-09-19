@@ -45,6 +45,7 @@ nav a {
     -webkit-tap-highlight-color: transparent; /* iOS & Android */
     -webkit-touch-callout: none;              /* iOS long press menu */
     outline: none;
+    user-select: none;
 }
 
 nav a span {
