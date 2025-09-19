@@ -18,10 +18,13 @@
     <script src="assets/scripts/page_control.js"></script>
     <script src="assets/scripts/card_render.js"></script>
     <script src="assets/scripts/unbind_card.js"></script>
-    <script src="assets/scripts/card_log.js" defer></script>
-
+<!--    <script src="assets/scripts/card_log.js" defer></script>-->
+    <script src="assets/scripts/log_display/fetch_log.js"></script>
+    <script src="assets/scripts/log_display/payment.js"></script>
+    <script src="assets/scripts/log_display/transit.js"></script>
+    <script src="assets/scripts/log_display/render.js"></script>
 </head>
-<body>
+<body oncontextmenu="return false;">
 
     <div id="loader">
         <div class="spinner"></div>
@@ -63,10 +66,11 @@
         <!-- Dev here -->
         <section id="card">
             <img src="assets/images/wasabi_pancard.png" alt="pancard and Wasabi card">
-            <p>Balance:</p>
+            <p id="balance_text"></p>
             <p id="card_balance"></p>
+            <p id="expiry_date"></p>
             <p id="card_number"></p>
-<!--            <p id="card_name">winsanmwtv</p>-->
+            <p id="card_name"></p>
             <input type="button" id="unbind_card_pc" value="Unbind card">
             <footer class="card_pc">This web-app is made for Minecraft Limaru City Server. It's for roleplay purpose, nothing related in real-life resources.</footer>
             <footer class="card_pc">Testing system, you may only bind 1 card at a time.</footer>
@@ -76,6 +80,10 @@
 
 
         <section id="transit_history">
+
+            <div id="loader_transit">
+                <div class="spinner"></div>
+            </div>
             <p class="transit_header">Transit History</p>
 <!--            <div class="transit_details">-->
 <!--                <p class="transit_date">16 Sep 2025</p>-->
@@ -92,7 +100,8 @@
 <!--                    <span class="material-symbols-outlined">directions_subway</span>-->
 <!--                    <p class="transit_station">Legacy Road</p>-->
 <!--                </div>-->
-<!--                <div class="transit_pass">Student Concession Pass used</div>-->
+<!--                <div class="transit_invalid">Entry invalid</div>-->
+<!--                <div class="transit_pass">KTB_S_PASS</div>-->
 <!--                <div class="transit_fare_detail">-->
 <!--                    <div class="transit_fare">£ 3.00</div>-->
 <!--                    <div class="transit_osi">OSI discounted</div>-->
@@ -101,6 +110,10 @@
                     </section>
 
         <section id="payment_history">
+
+            <div id="loader_payment">
+                <div class="spinner"></div>
+            </div>
             <p class="payment_header">Payment History</p>
 <!--            <div class="payment_details">-->
 <!--                <span class="material-symbols-outlined">tram</span>-->
@@ -122,11 +135,5 @@
             <footer>Data shown is before 31 August 2025 by now.</footer>
         </section>
     </main>
-<script>(function() {
-  const ua = navigator.userAgent;
-  if (/Samsung DeX|Dex/i.test(ua)) {
-    document.body.classList.add("samsung-dex");
-  }
-})();</script>
 </body>
 </html>
