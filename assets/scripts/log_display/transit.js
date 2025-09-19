@@ -92,7 +92,7 @@ async function transit_sort(raw_text) {
                     j++;
                     status = "exit";
                 } else if (status === "exit") {
-                    if (table[j][0] === null) table[j][0] = logDate.toLocaleTimeString(undefined, optionsDate);
+                    if (table[j][0] === null) table[j][0] = logDate.toLocaleDateString(undefined, optionsDate);
                     const station = obj.data.xStation;
                     if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => station.includes(s))) {
                         continue; // skip this row
