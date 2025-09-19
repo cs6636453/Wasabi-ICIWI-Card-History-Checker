@@ -15,10 +15,23 @@
     <title class="mobile">My Wasabi</title>
     <title class="desktop">Bind IC Card | Wasabi Card</title>
 
+
+
     <script>
         window.addEventListener("load", () => {
             const loader = document.getElementById("loader");
             loader.classList.add("hidden");
+
+            const input = document.getElementById("card_no");
+            const button = document.getElementById("bind_button");
+
+            // If Enter is pressed inside the input field, click the button
+            input.addEventListener("keypress", (event) => {
+                if (event.key === "Enter") {
+                    event.preventDefault(); // prevent form submission if inside <form>
+                    button.click();
+                }
+            });
         });
     </script>
     <script src="../assets/scripts/bind_card.js"></script>
