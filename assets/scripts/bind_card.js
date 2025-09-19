@@ -31,4 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Redirect
         window.location.href = "../";
     });
+
+
 });
+

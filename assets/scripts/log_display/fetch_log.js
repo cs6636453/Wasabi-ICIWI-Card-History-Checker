@@ -70,7 +70,7 @@ async function fetch_log() {
         parsed_text_transit = parsed_text_transit.reverse();
 
 
-        let name = "WASABI CARD HOLDER";
+        let name = "WASABI HOLDER";
         let is_name_checked = false;
 
         let balance = 0;
