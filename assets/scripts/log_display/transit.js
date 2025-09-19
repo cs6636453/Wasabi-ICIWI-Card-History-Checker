@@ -29,7 +29,6 @@ async function transit_sort(raw_text) {
                         table[j][1] = "directions_railway";
                     }
                     table[j][0] = logDate.toLocaleDateString(undefined, optionsDate);
-                    console.log(table[j][0]+"this is inside transit");
                     table[j][2] = logDate.toLocaleTimeString(undefined, optionsTime);
                     table[j][3] = station;
                     status = "entry";
@@ -49,7 +48,6 @@ async function transit_sort(raw_text) {
                         table[j][1] = "directions_railway";
                     }
                     table[j][0] = logDate.toLocaleDateString(undefined, optionsDate);
-                    console.log(table[j][0]+"this is inside transit");
                     table[j][2] = logDate.toLocaleTimeString(undefined, optionsTime);
                     table[j][3] = station;
                     status = "entry";
@@ -131,7 +129,6 @@ async function transit_sort(raw_text) {
         }
     }
 
-    console.log(test_fare.toFixed(2));
 
     return table;
 }

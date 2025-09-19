@@ -120,7 +120,6 @@ function transit_render(raw_text) {
         raw_text[i][2] ? transit_time.innerHTML = raw_text[i][2] : transit_time.innerHTML = "N/A";
         span_icon.innerHTML = raw_text[i][1];
         transit_station.innerHTML = raw_text[i][3];
-        console.log(transit_station);
         transit_drawmap.appendChild(transit_time);
         transit_drawmap.appendChild(transit_dot);
         transit_drawmap.appendChild(span_icon);
@@ -139,10 +138,10 @@ function transit_render(raw_text) {
         transit_pass.innerHTML = raw_text[i][5];
         transit_fare.innerHTML = "£ "+(Math.abs(raw_text[i][6])).toFixed(2);
         transit_osi.innerHTML = "OSI discounted";
-        raw_text[i][4] ? transit_details.appendChild(transit_invalid) : console.log("Journey normal");
-        raw_text[i][5] ? transit_details.appendChild(transit_pass) : console.log("No pass detected");
-        raw_text[i][6] !== 0 ? transit_fare_detail.appendChild(transit_fare) : console.log("Fare is equal to 0");
-        raw_text[i][7] ? transit_fare_detail.appendChild(transit_osi) : console.log("No OSI detected");
+        raw_text[i][4] && transit_details.appendChild(transit_invalid);
+        raw_text[i][5] && transit_details.appendChild(transit_pass);
+        raw_text[i][6] !== 0 && transit_fare_detail.appendChild(transit_fare);
+        raw_text[i][7] && transit_fare_detail.appendChild(transit_osi);
         transit_details.appendChild(transit_fare_detail);
         transit_history.appendChild(transit_details);
     }

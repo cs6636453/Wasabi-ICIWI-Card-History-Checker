@@ -47,7 +47,6 @@ async function fetch_log() {
             }
         }
 
-        console.log("Matched objects with serial", serial, ":", matchedObjects);
 
         let parsed_text = await payment_sort(matchedObjects);
 
@@ -59,7 +58,6 @@ async function fetch_log() {
         // 2. Flip (reverse) the order of rows
         parsed_text = parsed_text.reverse();
 
-        console.log(parsed_text);
 
         let parsed_text_transit = await transit_sort(matchedObjects);
 
@@ -71,7 +69,6 @@ async function fetch_log() {
         // 2. Flip (reverse) the order of rows
         parsed_text_transit = parsed_text_transit.reverse();
 
-        console.log(parsed_text_transit);
 
         let name = "WASABI CARD HOLDER";
         let is_name_checked = false;
@@ -99,13 +96,9 @@ async function fetch_log() {
         let year = date.getFullYear();
 
         let result = `01/${month}/${year}`;
-        console.log(result);
 
         result = "Exp. "+result.slice(3);
 
-        console.log(balance);
-        console.log(name);
-        console.log(type);
 
         payment_render(parsed_text);
         transit_render(parsed_text_transit);

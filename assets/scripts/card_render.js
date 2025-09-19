@@ -10,10 +10,8 @@ function getCookie(name) {
     // Example usage:
     let serial = getCookie("iciwi_serial");
     if (serial) {
-    console.log("iciwi_serial found:", serial);
     // Do something if cookie exists
 } else {
-    console.log("iciwi_serial not found");
     // Do something else if missing
 }
 
