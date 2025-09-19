@@ -31,11 +31,20 @@ nav {
     z-index: 999;
 }
 
+nav a:hover,
+nav a:active,
+nav a:focus {
+    text-decoration: none;
+}
+
 nav a {
     flex: 1;                 /* each link takes equal space */
     text-align: center;       /* center the icon inside */
     color: gray;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent; /* iOS & Android */
+    -webkit-touch-callout: none;              /* iOS long press menu */
+    outline: none;
 }
 
 nav a span {
