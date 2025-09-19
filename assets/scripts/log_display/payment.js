@@ -41,7 +41,7 @@ async function payment_sort(raw_text) {
                 // Check xStation with multiple substrings
                 const station = obj.data.xStation;
 
-                if (["Bus", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
+                if (["Bus-", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
                     icon = "directions_bus";
                     titleL = "Bus payment";
                     titleR = "KTB/ETB";

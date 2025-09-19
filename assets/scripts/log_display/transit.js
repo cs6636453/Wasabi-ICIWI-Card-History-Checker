@@ -21,7 +21,7 @@ async function transit_sort(raw_text) {
             case "card-entry":
                 if (status === "exit") {
                     const station = obj.data.nStation;
-                    if (["Bus", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
+                    if (["Bus-", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
                         table[j][1] = "directions_bus";
                     } else if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => station.includes(s))) {
                         continue; // skip this row
@@ -40,7 +40,7 @@ async function transit_sort(raw_text) {
                     table[j][4] = true;
                     j++;
 
-                    if (["Bus", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
+                    if (["Bus-", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
                         table[j][1] = "directions_bus";
                     } else if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => station.includes(s))) {
                         continue; // skip this row
