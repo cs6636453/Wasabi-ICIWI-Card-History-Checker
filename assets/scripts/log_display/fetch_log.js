@@ -23,6 +23,7 @@ async function fetch_log() {
         ]);
 
         const matchedObjects = [];
+
         let buffer = "";
 
         for (const line of lines) {
@@ -46,7 +47,6 @@ async function fetch_log() {
                 buffer += "\n"; // incomplete JSON, continue accumulating
             }
         }
-
 
         let parsed_text = await payment_sort(matchedObjects);
 
@@ -79,7 +79,7 @@ async function fetch_log() {
                 name = parsed_text[i][4];
                 is_name_checked = true;
             }
-            balance += parsed_text[i][5];
+            balance += (parsed_text[i][5] ? parsed_text[i][5] : 0);
         }
 
         let type = parsed_text[0][3];

@@ -172,7 +172,7 @@ function card_render(type, balance, exp, serial, name) {
         expiry_date.innerHTML = "";
     } else {
         balance_text.innerHTML = "Balance: ";
-        card_balance.innerHTML = "£ "+ balance;
+        card_balance.innerHTML = "£ "+ balance.toFixed(2);
         card_name.innerHTML = name;
     }
 
