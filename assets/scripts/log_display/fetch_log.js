@@ -105,6 +105,7 @@ async function fetch_log() {
 
         console.log(balance);
         console.log(name);
+        console.log(type);
 
         payment_render(parsed_text);
         transit_render(parsed_text_transit);
@@ -119,6 +120,16 @@ async function fetch_log() {
 
     } catch(e) {
         console.log(e);
+        const serial = getCookie('iciwi_serial');
+        card_render_invalid(serial)
+
+
+
+        const loader_payment = document.getElementById("loader_payment");
+        loader_payment.classList.add("hidden");
+
+        const loader_transit = document.getElementById("loader_transit");
+        loader_transit.classList.add("hidden");
     }
 }
 

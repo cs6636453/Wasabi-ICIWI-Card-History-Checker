@@ -166,14 +166,51 @@ function card_render(type, balance, exp, serial, name) {
     card_number.innerHTML = "• " + padded;
     expiry_date.innerHTML = exp;
 
-    if (type === "refund-card") {
+    if (type === "Refund card") {
         balance_text.innerHTML = "VOID";
         card_number.innerHTML = "";
         card_name.innerHTML = "• "+padded;
+        expiry_date.innerHTML = "";
     } else {
         balance_text.innerHTML = "Balance: ";
         card_balance.innerHTML = "£ "+ balance;
         card_name.innerHTML = name;
     }
+
+}
+
+function card_render_invalid(serial) {
+    // <p id="balance_text"></p>
+    // <p id="card_balance"></p>
+    // <p id="expiry_date"></p>
+    // <p id="card_number"></p>
+    // <p id="card_name"></p>
+
+    let balance_text = document.getElementById("balance_text");
+    let card_balance = document.getElementById("card_balance");
+    let expiry_date = document.getElementById("expiry_date");
+    let card_number = document.getElementById("card_number");
+    let card_name = document.getElementById("card_name");
+
+    let transit_history = document.getElementById("transit_history");
+    let payment_history = document.getElementById("payment_history");
+
+    let error1 = document.createElement("p");
+    let error2 = document.createElement("p");
+
+    error1.innerHTML = "Invalid card, try unbind and bind again!";
+    error2.innerHTML = "Invalid card, try unbind and bind again!";
+
+    transit_history.appendChild(error1);
+    payment_history.appendChild(error2);
+
+    let sliced = serial.slice(3);          // remove first 3 characters
+    let padded = sliced.padStart(5, '0');  // ensure at least 5 characters, pad with 0
+    card_name.innerHTML = "• " + padded;
+
+    card_number.innerHTML = "";
+    expiry_date.innerHTML = "";
+    balance_text.innerHTML = "VOID";
+    card_balance.innerHTML = "";
 
 }

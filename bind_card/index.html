@@ -15,7 +15,12 @@
     <title class="mobile">My Wasabi</title>
     <title class="desktop">Bind IC Card | Wasabi Card</title>
 
-    <script src="../assets/scripts/page_control.js"></script>
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("loader");
+            loader.classList.add("hidden");
+        });
+    </script>
     <script src="../assets/scripts/bind_card.js"></script>
 </head>
 <body oncontextmenu="return false;">
@@ -72,12 +77,6 @@
         <button value="Bind this card" id="bind_button">Bind this card</button>
     </section>
 </main>
-<script>(function() {
-  const ua = navigator.userAgent;
-  if (/Samsung DeX|Dex/i.test(ua)) {
-    document.body.classList.add("samsung-dex");
-  }
-})();</script>
 
 </body>
 </html>
