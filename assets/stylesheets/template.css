@@ -330,7 +330,7 @@ header img {
 .transit_line_osi {
     width: 4px;
     background-color: lightgray;
-    height: 15px;
+    height: 0;
     margin-left: calc(108px + 0.5px);
     position: relative; /* needed for pseudo-elements */
 }
@@ -346,7 +346,7 @@ header img {
 
 .transit_line_osi::before {
     top: -5px;       /* extend above */
-    height: 48px;     /* extension length */
+    height: 30px;     /* extension length */
 }
 
 .transit_line_osi::after {
