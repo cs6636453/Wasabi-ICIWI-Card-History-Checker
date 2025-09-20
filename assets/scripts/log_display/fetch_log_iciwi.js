@@ -54,6 +54,13 @@ async function fetch_log(serial) {
 
         console.log(parsed_table);
 
+        // ✅ Correct way to hide loader
+        const loader2 = document.getElementById('loader-overlay-2');
+        if (loader2) {
+            loader2.style.display = 'none';
+            loader2.classList.add('loaded-2');
+        }
+
     } catch(e) {
         console.error(e);
         const serial = getCookie('iciwi_serial');

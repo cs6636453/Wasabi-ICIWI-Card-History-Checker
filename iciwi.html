@@ -14,8 +14,6 @@
             let request = document.getElementById("request");
             if (serial) request.innerHTML = "Query for: " + serial;
 
-            let balance = document.getElementById("balance");
-
             // Set the input value
             let serial_box = document.getElementById("serial");
             if (serial_box && serial !== null) {
@@ -23,6 +21,10 @@
             }
 
             fetch_log(serial);
+
+            // Hide loader when everything is ready
+            const loaders = document.querySelectorAll('.loader-container, .loader-container-2');
+            loaders.forEach(loader => loader.style.display = 'none');
         };
     </script>
     <script src="assets/scripts/log_display/fetch_log_iciwi.js"></script>
@@ -40,27 +42,67 @@
         td {
             text-align: center;
         }
+
+        /* Loader styles */
+        .loader-container, .loader-container-2 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loader, .loader-2 {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
-    <form action="iciwi.html">
-        <fieldset>
-            <legend>ICIWI Transit Query</legend>
-            <label for="serial">ICIWI No. </label>
-            <input type="text" placeholder="Bx-xxxxx" value="B" id="serial" pattern="B[A-Z]-[0-9]{1,5}" name="serial">
-            <button type="submit">Query</button>
-        </fieldset>
-    </form>
-    <h1 id="request"></h1>
-    <h3 id="balance"></h3>
-    <table id="result">
-        <tr>
-            <th>Timestamp</th>
-            <th>Station</th>
-            <th>Transaction type</th>
-            <th>Fare/Price</th>
-            <th>Balance left</th>
-        </tr>
-    </table>
+<!-- Loader 1 -->
+<div class="loader-container">
+    <div class="loader"></div>
+</div>
+
+<!-- Loader 2 -->
+<div class="loader-container-2">
+    <div class="loader-2"></div>
+</div>
+
+<form action="iciwi.html">
+    <fieldset>
+        <legend>ICIWI Transit Query</legend>
+        <label for="serial">ICIWI No. </label>
+        <input type="text" placeholder="Bx-xxxxx" value="B" id="serial" pattern="B[A-Z]-[0-9]{1,5}" name="serial">
+        <button type="submit">Query</button>
+    </fieldset>
+</form>
+
+<h1 id="request"></h1>
+<h3 id="balance"></h3>
+
+<table id="result">
+    <tr>
+        <th>Timestamp</th>
+        <th>Station</th>
+        <th>Transaction type</th>
+        <th>Fare/Price</th>
+        <th>Balance left</th>
+    </tr>
+</table>
 </body>
 </html>
