@@ -144,7 +144,7 @@ function transit_render(raw_text) {
             continue_status = false;
         }
         transit_history.appendChild(transit_details);
-        if (i < raw_text.length) transit_history.appendChild(hr);
+        if (i < raw_text.length-1) transit_history.appendChild(hr);
         sum_transit = 0;
         rail_pass = "";
         invalid_exist = false;
