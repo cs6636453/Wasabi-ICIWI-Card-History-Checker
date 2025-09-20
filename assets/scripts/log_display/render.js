@@ -36,7 +36,6 @@ function transit_render(raw_text) {
     let sum_transit = 0;
     let invalid_exist = false;
     let rail_pass = "";
-    console.log(raw_text);
     let transit_history = document.getElementById("transit_history");
     let continue_status = false;
     for (let i = 0; i < raw_text.length; i++) {
@@ -115,14 +114,11 @@ function transit_render(raw_text) {
             transit_drawmap2.appendChild(transit_station2);
             transit_details.appendChild(transit_drawmap2);
             if (raw_text[i][4] && !invalid_exist) invalid_exist = true;
-            console.log(raw_text[i][6]);
             if (raw_text[i][5] !== "") {
                 if (rail_pass === "") {
                     rail_pass = raw_text[i][5];
                 } else if (!(rail_pass.includes(raw_text[i][5]))) {
-                    console.log(rail_pass);
                     rail_pass = rail_pass + ", " + raw_text[i][5];
-                    console.log(rail_pass);
                 }
             }
             sum_transit += +raw_text[i][6];
@@ -139,7 +135,6 @@ function transit_render(raw_text) {
             invalid_exist && transit_details.appendChild(transit_invalid);
             rail_pass && transit_details.appendChild(transit_pass);
             sum_transit !== 0 && transit_fare_detail.appendChild(transit_fare);
-            console.log("Total for group: "+sum_transit);
             transit_details.appendChild(transit_fare_detail);
             continue_status = false;
         }
