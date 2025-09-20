@@ -117,7 +117,7 @@ function transit_render(raw_text) {
             transit_drawmap2.appendChild(span_icon2);
             transit_drawmap2.appendChild(transit_station2);
             transit_details.appendChild(transit_drawmap2);
-            raw_text[i][4] && !invalid_exist ? invalid_exist = true : invalid_exist = false;
+            if (raw_text[i][4] && !invalid_exist) invalid_exist = true;
             console.log(raw_text[i][6]);
             if (raw_text[i][5] !== "") {
                 if (rail_pass === "") {
@@ -154,6 +154,7 @@ function transit_render(raw_text) {
         if (i < raw_text.length) transit_history.appendChild(hr);
         sum_transit = 0;
         rail_pass = "";
+        invalid_exist = false;
     }
 }
 
