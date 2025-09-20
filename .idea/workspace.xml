@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4e1e2ff5-9b4a-4fb1-887a-9a1611f2a3b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/log_display/payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/log_display/payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iciwi/iciwi.log" beforeDir="false" afterPath="$PROJECT_DIR$/Iciwi/iciwi.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/log_display/fetch_log.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/log_display/fetch_log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/log_display/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/log_display/render.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scripts/log_display/transit.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/log_display/transit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/page_control.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/page_control.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/stylesheets/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/stylesheets/template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,24 +54,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/phong/Documents/wasabi/assets/image&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/phong/Documents/pancard_iciwi",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\phong\Documents\wasabi\assets\image" />
@@ -98,6 +103,7 @@
       <workItem from="1758295407973" duration="3226000" />
       <workItem from="1758342591077" duration="1446000" />
       <workItem from="1758344272405" duration="783000" />
+      <workItem from="1758347276179" duration="7410000" />
     </task>
     <servers />
   </component>

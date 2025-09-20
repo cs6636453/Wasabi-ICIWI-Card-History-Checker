@@ -69,6 +69,7 @@ async function fetch_log() {
         // 2. Flip (reverse) the order of rows
         parsed_text_transit = parsed_text_transit.reverse();
 
+        parsed_text_transit = transit_filter(parsed_text_transit);
 
         let name = "WASABI HOLDER";
         let is_name_checked = false;

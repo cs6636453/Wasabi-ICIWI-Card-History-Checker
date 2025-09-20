@@ -23,7 +23,7 @@ function page_payment() {
     go_transit.classList.remove("active");
     go_account.classList.remove("active");
 
-    page = 0;
+    page = 1;
 }
 
 function page_transit() {
@@ -43,7 +43,7 @@ function page_transit() {
     go_transit.classList.add("active");
     go_account.classList.remove("active");
 
-    page = 1;
+    page = 0;
 }
 
 function page_account() {
@@ -67,7 +67,7 @@ function page_account() {
 }
 
 window.onload = function() {
-    page_payment();
+    page_transit();
 }
 
 function handleResize() {

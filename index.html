@@ -32,8 +32,8 @@
 
     <!-- Nav section -->
     <nav>
-        <a href="#" class="active" id="go_payment" onclick="page_payment()"><span class="material-symbols-outlined">receipt_long</span><div class="nav_text">Payment History</div></a>
-        <a href="#" id="go_transit" onclick="page_transit()"><span class="material-symbols-outlined">bus_railway</span><div class="nav_text">Transit History</div></a>
+        <a href="#" id="go_transit" class="active" onclick="page_transit()"><span class="material-symbols-outlined">bus_railway</span><div class="nav_text">Trip details</div></a>
+        <a href="#" id="go_payment" onclick="page_payment()"><span class="material-symbols-outlined">receipt_long</span><div class="nav_text">Other transactions</div></a>
         <a href="#" id="go_account" onclick="page_account()"><span class="material-symbols-outlined">credit_card_gear</span></a>
     </nav>
 
@@ -84,7 +84,7 @@
             <div id="loader_transit">
                 <div class="spinner"></div>
             </div>
-            <p class="transit_header">Transit History</p>
+            <p class="transit_header">Trip details</p>
 <!--            <div class="transit_details">-->
 <!--                <p class="transit_date">16 Sep 2025</p>-->
 <!--                <div class="transit_drawmap">-->
@@ -93,7 +93,7 @@
 <!--                    <span class="material-symbols-outlined">directions_subway</span>-->
 <!--                    <p class="transit_station">Downtown</p>-->
 <!--                </div>-->
-<!--                <div class="transit_line"></div>-->
+<!--                <div class="transit_line_osi"></div>-->
 <!--                <div class="transit_drawmap drawmap_dest">-->
 <!--                    <p class="transit_time">22:00:00</p>-->
 <!--                    <div class="transit_dot"></div>-->
@@ -114,7 +114,7 @@
             <div id="loader_payment">
                 <div class="spinner"></div>
             </div>
-            <p class="payment_header">Payment History</p>
+            <p class="payment_header">Other transactions</p>
 <!--            <div class="payment_details">-->
 <!--                <span class="material-symbols-outlined">tram</span>-->
 <!--                <div class="payment_text">-->

@@ -1,17 +1,4 @@
 function payment_render(raw_text) {
-
-    // <div className="payment_details"> (id = payment_history)
-    //     <span className="material-symbols-outlined">tram</span>
-    //     <div className="payment_text">
-    //         <p className="payment_datetime">16 Sep 2025 | 21:31</p>
-    //         <p className="payment_title">Fare payment - Downtown</p>
-    //     </div>
-    //     <p className="payment_total negative">
-    //         -£ 3.00
-    //     </p>
-    // </div>
-
-    // 0 icon, 1 date, 2 time, 3 title1, 4 title2, 5 fare
     let payment_history = document.getElementById("payment_history");
     for (let i = 0; i < raw_text.length; i++) {
         let hr = document.createElement("hr");
@@ -46,10 +33,14 @@ function payment_render(raw_text) {
 }
 
 function transit_render(raw_text) {
+    let sum_transit = 0;
+    let invalid_exist = false;
+    let rail_pass = "";
+    console.log(raw_text);
     let transit_history = document.getElementById("transit_history");
+    let continue_status = false;
     for (let i = 0; i < raw_text.length; i++) {
         let hr = document.createElement("hr");
-        if (i !== 0) transit_history.appendChild(hr);
         let transit_details = document.createElement("div");
         transit_details.classList.add("transit_details");
         let transit_date = document.createElement("p");
@@ -86,33 +77,8 @@ function transit_render(raw_text) {
         transit_fare.classList.add("transit_fare");
         let transit_osi = document.createElement("div");
         transit_osi.classList.add("transit_osi");
-
-        // <div className="transit_details"> (id = transit_history)
-        //     <p className="transit_date">16 Sep 2025</p>
-        //     <div className="transit_drawmap">
-        //         <p className="transit_time">21:59:00</p>
-        //         <div className="transit_dot"></div>
-        //         <span className="material-symbols-outlined">directions_subway</span>
-        //         <p className="transit_station">Downtown</p>
-        //     </div>
-        //     <div className="transit_line"></div>
-        // <!-- shared -->
-        //     <div className="transit_drawmap drawmap_dest">
-        //         <p className="transit_time">22:00:00</p>
-        //         <div className="transit_dot"></div>
-        //         <span className="material-symbols-outlined">directions_subway</span>
-        //         <p className="transit_station">Legacy Road</p>
-        //     </div>
-        //     <div className="transit_invalid">Entry invalid</div>
-        //     <div className="transit_pass">KTB_S_PASS</div>
-        //     <div className="transit_fare_detail">
-        //         <div className="transit_fare">£ 3.00</div>
-        //         <div className="transit_osi">OSI discounted</div>
-        //     </div>
-        // </div>
-
-        // 0 date, 1 icon, 2 nTime, 3 nStation, 4 isInvalid, 5 pass, 6 fare, 7 osi, 8 xTime, 9 xStation
-
+        let transit_line_osi = document.createElement("div");
+        transit_line_osi.classList.add("transit_line_osi");
         if (raw_text[i][4] === "payment_transit_tag") {
             transit_date.innerHTML = raw_text[i][0];
             transit_details.appendChild(transit_date);
@@ -132,7 +98,7 @@ function transit_render(raw_text) {
             transit_details.appendChild(transit_fare_detail);
         } else {
             transit_invalid.innerHTML = "Invalid journey";
-            transit_date.innerHTML = raw_text[i][0];
+            if (!continue_status) transit_date.innerHTML = raw_text[i][0];
             transit_details.appendChild(transit_date);
             raw_text[i][2] ? transit_time.innerHTML = raw_text[i][2] : transit_time.innerHTML = "N/A";
             span_icon.innerHTML = raw_text[i][1];
@@ -171,39 +137,36 @@ function transit_render(raw_text) {
                 continue;
             }
             transit_details.classList.add("drawmap_dest");
-            transit_pass.innerHTML = raw_text[i][5];
-            transit_fare.innerHTML = "£ "+(Math.abs(raw_text[i][6])).toFixed(2);
-            transit_osi.innerHTML = "OSI discounted";
-            raw_text[i][4] && transit_details.appendChild(transit_invalid);
-            raw_text[i][5] && transit_details.appendChild(transit_pass);
-            +raw_text[i][6] !== 0 && transit_fare_detail.appendChild(transit_fare);
+            transit_pass.innerHTML = rail_pass;
+            transit_fare.innerHTML = "£ "+(Math.abs(sum_transit)).toFixed(2);
+            transit_osi.innerHTML = "OSI discount included";
+            invalid_exist && transit_details.appendChild(transit_invalid);
+            rail_pass && transit_details.appendChild(transit_pass);
+            sum_transit !== 0 && transit_fare_detail.appendChild(transit_fare);
+            console.log("Total for group: "+sum_transit);
             if (raw_text[i][7] === true || raw_text[i][7] === "true") {
                 transit_fare_detail.appendChild(transit_osi);
             }
             transit_details.appendChild(transit_fare_detail);
+            continue_status = false;
         }
         transit_history.appendChild(transit_details);
+        if (i < raw_text.length) transit_history.appendChild(hr);
+        sum_transit = 0;
+        rail_pass = "";
     }
 }
 
 function card_render(type, balance, exp, serial, name) {
-    // <p id="balance_text"></p>
-    // <p id="card_balance"></p>
-    // <p id="expiry_date"></p>
-    // <p id="card_number"></p>
-    // <p id="card_name"></p>
-
     let balance_text = document.getElementById("balance_text");
     let card_balance = document.getElementById("card_balance");
     let expiry_date = document.getElementById("expiry_date");
     let card_number = document.getElementById("card_number");
     let card_name = document.getElementById("card_name");
-
     let sliced = serial.slice(3);          // remove first 3 characters
     let padded = sliced.padStart(5, '0');  // ensure at least 5 characters, pad with 0
     card_number.innerHTML = "• " + padded;
     expiry_date.innerHTML = exp;
-
     if (type === "Refund card") {
         balance_text.innerHTML = "VOID";
         card_number.innerHTML = "";
@@ -214,41 +177,27 @@ function card_render(type, balance, exp, serial, name) {
         card_balance.innerHTML = "£ "+ balance.toFixed(2);
         card_name.innerHTML = name;
     }
-
 }
 
 function card_render_invalid(serial) {
-    // <p id="balance_text"></p>
-    // <p id="card_balance"></p>
-    // <p id="expiry_date"></p>
-    // <p id="card_number"></p>
-    // <p id="card_name"></p>
-
     let balance_text = document.getElementById("balance_text");
     let card_balance = document.getElementById("card_balance");
     let expiry_date = document.getElementById("expiry_date");
     let card_number = document.getElementById("card_number");
     let card_name = document.getElementById("card_name");
-
     let transit_history = document.getElementById("transit_history");
     let payment_history = document.getElementById("payment_history");
-
     let error1 = document.createElement("p");
     let error2 = document.createElement("p");
-
     error1.innerHTML = "Invalid card, try unbind and bind again!";
     error2.innerHTML = "Invalid card, try unbind and bind again!";
-
     transit_history.appendChild(error1);
     payment_history.appendChild(error2);
-
     let sliced = serial.slice(3);          // remove first 3 characters
     let padded = sliced.padStart(5, '0');  // ensure at least 5 characters, pad with 0
     card_name.innerHTML = "• " + padded;
-
     card_number.innerHTML = "";
     expiry_date.innerHTML = "";
     balance_text.innerHTML = "VOID";
     card_balance.innerHTML = "";
-
 }
