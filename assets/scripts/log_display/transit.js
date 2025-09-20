@@ -181,3 +181,44 @@ async function transit_sort(raw_text) {
 
     return table;
 }
+
+function transit_filter(raw_text) {
+    let start = null;
+
+    for (let i = 0; i <= raw_text.length; i++) {
+        let val = raw_text[i]?.[7];
+        let isTrue = val === true || val === "true";
+        let isFalse = val === false || val === "false";
+
+        if (isTrue && start === null) {
+            // start of a true group
+            start = i;
+        }
+
+        if ((isFalse || i === raw_text.length) && start !== null) {
+            // end of the group, include this false row
+            let end = i; // include i even if it's false
+
+            let block = raw_text.slice(start, end + 1);
+
+            // reverse only the specified fields
+            let fields = [1, 2, 3, 8, 9];
+            fields.forEach(fieldIdx => {
+                let values = block.map(row => row[fieldIdx]).reverse();
+                for (let k = 0; k < block.length; k++) {
+                    block[k][fieldIdx] = values[k];
+                }
+            });
+
+            // put block back
+            for (let k = 0; k < block.length; k++) {
+                raw_text[start + k] = block[k];
+            }
+
+            // reset start
+            start = null;
+        }
+    }
+
+    return raw_text;
+}
