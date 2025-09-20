@@ -151,6 +151,25 @@ function transit_render(raw_text) {
             transit_drawmap2.appendChild(span_icon2);
             transit_drawmap2.appendChild(transit_station2);
             transit_details.appendChild(transit_drawmap2);
+            raw_text[i][4] && !invalid_exist ? invalid_exist = true : invalid_exist = false;
+            console.log(raw_text[i][6]);
+            if (raw_text[i][5] !== "") {
+                if (rail_pass === "") {
+                    rail_pass = raw_text[i][5];
+                } else if (!(rail_pass.includes(raw_text[i][5]))) {
+                    console.log(rail_pass);
+                    rail_pass = rail_pass + ", " + raw_text[i][5];
+                    console.log(rail_pass);
+                }
+            }
+            sum_transit += +raw_text[i][6];
+            if (raw_text[i][7] === true || raw_text[i][7] === "true") {
+                transit_details.appendChild(transit_line_osi);
+                transit_history.appendChild(transit_details);
+
+                continue_status = true;
+                continue;
+            }
             transit_details.classList.add("drawmap_dest");
             transit_pass.innerHTML = raw_text[i][5];
             transit_fare.innerHTML = "£ "+(Math.abs(raw_text[i][6])).toFixed(2);
