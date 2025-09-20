@@ -76,7 +76,7 @@ async function payment_sort(raw_text) {
             case "payment":
                 icon = "storefront";
                 titleL = "Merchant";
-                titleR = '["IPID"=27]';
+                titleR = obj.data.station ? obj.data.station : '["IPID"=27]';
                 fare = -((Number(obj.data.price)).toFixed(2));
                 break;
             default:

@@ -113,38 +113,56 @@ function transit_render(raw_text) {
 
         // 0 date, 1 icon, 2 nTime, 3 nStation, 4 isInvalid, 5 pass, 6 fare, 7 osi, 8 xTime, 9 xStation
 
-        transit_invalid.innerHTML = "Invalid journey";
-
-        transit_date.innerHTML = raw_text[i][0];
-        transit_details.appendChild(transit_date);
-        raw_text[i][2] ? transit_time.innerHTML = raw_text[i][2] : transit_time.innerHTML = "N/A";
-        span_icon.innerHTML = raw_text[i][1];
-        transit_station.innerHTML = raw_text[i][3];
-        transit_drawmap.appendChild(transit_time);
-        transit_drawmap.appendChild(transit_dot);
-        transit_drawmap.appendChild(span_icon);
-        transit_drawmap.appendChild(transit_station);
-        transit_details.appendChild(transit_drawmap);
-        transit_details.appendChild(transit_line);
-        raw_text[i][8] ? transit_time2.innerHTML = raw_text[i][8] : transit_time2.innerHTML = "N/A";
-        transit_station2.innerHTML = raw_text[i][9];
-        transit_drawmap2.appendChild(transit_time2);
-        transit_drawmap2.appendChild(transit_dot2);
-        span_icon2.innerHTML = raw_text[i][1];
-        transit_drawmap2.appendChild(span_icon2);
-        transit_drawmap2.appendChild(transit_station2);
-        transit_details.appendChild(transit_drawmap2);
-        transit_details.classList.add("drawmap_dest");
-        transit_pass.innerHTML = raw_text[i][5];
-        transit_fare.innerHTML = "£ "+(Math.abs(raw_text[i][6])).toFixed(2);
-        transit_osi.innerHTML = "OSI discounted";
-        raw_text[i][4] && transit_details.appendChild(transit_invalid);
-        raw_text[i][5] && transit_details.appendChild(transit_pass);
-        +raw_text[i][6] !== 0 && transit_fare_detail.appendChild(transit_fare);
-        if (raw_text[i][7] === true || raw_text[i][7] === "true") {
-    transit_fare_detail.appendChild(transit_osi);
-}
-        transit_details.appendChild(transit_fare_detail);
+        if (raw_text[i][4] === "payment_transit_tag") {
+            transit_date.innerHTML = raw_text[i][0];
+            transit_details.appendChild(transit_date);
+            raw_text[i][2] ? transit_time.innerHTML = raw_text[i][2] : transit_time.innerHTML = "N/A";
+            span_icon.innerHTML = raw_text[i][1];
+            transit_station.innerHTML = raw_text[i][3];
+            transit_drawmap.appendChild(transit_time);
+            transit_drawmap.appendChild(span_icon);
+            transit_drawmap.appendChild(transit_station);
+            transit_details.appendChild(transit_drawmap);
+            transit_pass.innerHTML = raw_text[i][5];
+            transit_fare.innerHTML = "£ "+(Math.abs(raw_text[i][6])).toFixed(2);
+            transit_osi.innerHTML = "OSI discounted";
+            raw_text[i][4] && transit_details.appendChild(transit_invalid);
+            raw_text[i][5] && transit_details.appendChild(transit_pass);
+            +raw_text[i][6] !== 0 && transit_fare_detail.appendChild(transit_fare);
+            transit_details.appendChild(transit_fare_detail);
+        } else {
+            transit_invalid.innerHTML = "Invalid journey";
+            transit_date.innerHTML = raw_text[i][0];
+            transit_details.appendChild(transit_date);
+            raw_text[i][2] ? transit_time.innerHTML = raw_text[i][2] : transit_time.innerHTML = "N/A";
+            span_icon.innerHTML = raw_text[i][1];
+            transit_station.innerHTML = raw_text[i][3];
+            transit_drawmap.appendChild(transit_time);
+            transit_drawmap.appendChild(transit_dot);
+            transit_drawmap.appendChild(span_icon);
+            transit_drawmap.appendChild(transit_station);
+            transit_details.appendChild(transit_drawmap);
+            transit_details.appendChild(transit_line);
+            raw_text[i][8] ? transit_time2.innerHTML = raw_text[i][8] : transit_time2.innerHTML = "N/A";
+            transit_station2.innerHTML = raw_text[i][9];
+            transit_drawmap2.appendChild(transit_time2);
+            transit_drawmap2.appendChild(transit_dot2);
+            span_icon2.innerHTML = raw_text[i][1];
+            transit_drawmap2.appendChild(span_icon2);
+            transit_drawmap2.appendChild(transit_station2);
+            transit_details.appendChild(transit_drawmap2);
+            transit_details.classList.add("drawmap_dest");
+            transit_pass.innerHTML = raw_text[i][5];
+            transit_fare.innerHTML = "£ "+(Math.abs(raw_text[i][6])).toFixed(2);
+            transit_osi.innerHTML = "OSI discounted";
+            raw_text[i][4] && transit_details.appendChild(transit_invalid);
+            raw_text[i][5] && transit_details.appendChild(transit_pass);
+            +raw_text[i][6] !== 0 && transit_fare_detail.appendChild(transit_fare);
+            if (raw_text[i][7] === true || raw_text[i][7] === "true") {
+                transit_fare_detail.appendChild(transit_osi);
+            }
+            transit_details.appendChild(transit_fare_detail);
+        }
         transit_history.appendChild(transit_details);
     }
 }

@@ -121,6 +121,43 @@ async function transit_sort(raw_text) {
                 }
                 break;
             case "payment":
+
+                // date (of entry || exit if entry null) 0, icon 1, nTime 2, nStation 3,
+                // isInvalid 4, pass 5, fare 6, osi 7, xTime 8, xStation 9
+                if (obj.data.station) {
+                    if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => obj.data.station.includes(s))) {
+                        continue; // skip this row
+                    }
+
+                    table[j][0] = logDate.toLocaleDateString(undefined, optionsDate);
+                    table[j][1] = "directions_railway";
+                    table[j][2] = logDate.toLocaleTimeString(undefined, optionsTime);
+                    table[j][3] = obj.data.station;
+                    table[j][5] = obj.data.railPass;
+                    if (["Bus-", "KTB", "ETB", "BRT"].some(s => obj.data.station.includes(s))) {
+                        table[j][1] = "directions_bus";
+                    }
+
+                    table[j][4] = "payment_transit_tag";
+
+                    table[j][6] = -(Number(obj.data.price));
+                    if (Number(obj.data.price) === 0 && i < rowCount - 1) {
+                        const tmp_next = raw_text[i+1];
+                        if (tmp_next) {
+                            const currentValue = Number(obj.data.value || 0);
+                            const nextValue = Number(tmp_next.data.value || 0);
+
+                            if (currentValue !== nextValue) {
+                                table[j][6] = -(Math.abs(currentValue - nextValue).toFixed(2));
+                            }
+                        }
+                    }
+
+                    j++;
+                } else {
+                    continue;
+                }
+                break;
             case "new-card":
             case "refund-card":
             case "top-up-card":

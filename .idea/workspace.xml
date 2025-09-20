@@ -7,7 +7,9 @@
     <list default="true" id="4e1e2ff5-9b4a-4fb1-887a-9a1611f2a3b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Iciwi/iciwi.log" beforeDir="false" afterPath="$PROJECT_DIR$/Iciwi/iciwi.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/log_display/fetch_log.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/log_display/fetch_log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/log_display/payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/log_display/payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/log_display/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/log_display/render.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/log_display/transit.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/log_display/transit.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +98,7 @@
       <workItem from="1758185418437" duration="13552000" />
       <workItem from="1758260876985" duration="20452000" />
       <workItem from="1758295407973" duration="3226000" />
+      <workItem from="1758342591077" duration="1279000" />
     </task>
     <servers />
   </component>

@@ -5087,7 +5087,20 @@
     "railPass": "",
     "value": "556.55",
     "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
-    "fare": "0.0",
+    "fare": "0.6",
     "xStation": "YCMainStation"
   }
+}
+{
+   "timestamp": "2025-09-01 15:00:00",
+   "level": "INFO",
+   "message": "payment",
+   "data": {
+     "serial": "BN-7487",
+     "value": "555.95",
+     "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+     "railPass": "Free Bus Pass by KTB",
+     "station" : "Emmaru BRT",
+     "price": "1.2"
+   }
 }
