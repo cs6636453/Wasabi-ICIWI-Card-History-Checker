@@ -74,7 +74,7 @@ function handleResize() {
     if (window.matchMedia("(min-width: 1024px)").matches) {
         // For PC/Desktop
         if (page === 2) {
-            page_payment();
+            page_transit();
         }
         // 👉 Put your code here (e.g. hide/show pages, load different content)
     }
