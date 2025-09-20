@@ -75,8 +75,6 @@ function transit_render(raw_text) {
         transit_fare_detail.classList.add("transit_fare_detail");
         let transit_fare = document.createElement("div");
         transit_fare.classList.add("transit_fare");
-        let transit_osi = document.createElement("div");
-        transit_osi.classList.add("transit_osi");
         let transit_line_osi = document.createElement("div");
         transit_line_osi.classList.add("transit_line_osi");
         if (raw_text[i][4] === "payment_transit_tag") {
@@ -91,7 +89,6 @@ function transit_render(raw_text) {
             transit_details.appendChild(transit_drawmap);
             transit_pass.innerHTML = raw_text[i][5];
             transit_fare.innerHTML = "£ "+(Math.abs(raw_text[i][6])).toFixed(2);
-            transit_osi.innerHTML = "OSI discounted";
             raw_text[i][4] && transit_details.appendChild(transit_invalid);
             raw_text[i][5] && transit_details.appendChild(transit_pass);
             +raw_text[i][6] !== 0 && transit_fare_detail.appendChild(transit_fare);
@@ -139,14 +136,10 @@ function transit_render(raw_text) {
             transit_details.classList.add("drawmap_dest");
             transit_pass.innerHTML = rail_pass;
             transit_fare.innerHTML = "£ "+(Math.abs(sum_transit)).toFixed(2);
-            transit_osi.innerHTML = "OSI discount included";
             invalid_exist && transit_details.appendChild(transit_invalid);
             rail_pass && transit_details.appendChild(transit_pass);
             sum_transit !== 0 && transit_fare_detail.appendChild(transit_fare);
             console.log("Total for group: "+sum_transit);
-            if (raw_text[i][7] === true || raw_text[i][7] === "true") {
-                transit_fare_detail.appendChild(transit_osi);
-            }
             transit_details.appendChild(transit_fare_detail);
             continue_status = false;
         }
