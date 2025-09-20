@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="002aeec2-436a-4154-94e6-5c6aec0c9907" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/log_display/fetch_log_iciwi.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/log_display/fetch_log_iciwi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iciwi.html" beforeDir="false" afterPath="$PROJECT_DIR$/iciwi.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
