@@ -23,6 +23,8 @@ async function transit_sort(raw_text) {
                     const station = obj.data.nStation;
                     if (["Bus-", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
                         table[j][1] = "directions_bus";
+                    } else if (["Boat-"].some(s => station.includes(s))) {
+                        table[j][1] = "directions_boat";
                     } else if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => station.includes(s))) {
                         continue; // skip this row
                     } else {
@@ -42,6 +44,8 @@ async function transit_sort(raw_text) {
 
                     if (["Bus-", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
                         table[j][1] = "directions_bus";
+                    } else if (["Boat-"].some(s => station.includes(s))) {
+                        table[j][1] = "directions_boat";
                     } else if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => station.includes(s))) {
                         continue; // skip this row
                     } else {
@@ -96,6 +100,12 @@ async function transit_sort(raw_text) {
                     const station = obj.data.xStation;
                     if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => station.includes(s))) {
                         continue; // skip this row
+                    } else if (["Bus-", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
+                        table[j][1] = "directions_bus";
+                    } else if (["Boat-"].some(s => station.includes(s))) {
+                        table[j][1] = "directions_boat";
+                    } else {
+                        table[j][1] = "directions_railway";
                     }
                     table[j][4] = true;
                     table[j][5] = obj.data.railPass;
@@ -136,6 +146,8 @@ async function transit_sort(raw_text) {
                     table[j][5] = obj.data.railPass;
                     if (["Bus-", "KTB", "ETB", "BRT"].some(s => obj.data.station.includes(s))) {
                         table[j][1] = "directions_bus";
+                    } else if (["Boat"].some(s => obj.data.station.includes(s))) {
+                        table[j][1] = "directions_boat";
                     }
 
                     table[j][4] = "payment_transit_tag";

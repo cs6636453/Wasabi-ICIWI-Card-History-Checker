@@ -45,6 +45,10 @@ async function payment_sort(raw_text) {
                     icon = "directions_bus";
                     titleL = "Bus payment";
                     titleR = "KTB/ETB";
+                } else if (["Boat-"].some(s => station.includes(s))) {
+                    icon = "directions_boat";
+                    titleL = "Ferry payment";
+                    titleR = '["IPID"=21]';
                 } else if (["IICP", "Cinemaru"].some(s => station.includes(s))) {
                     icon = "storefront";
                     titleL = "Merchant";
@@ -75,6 +79,15 @@ async function payment_sort(raw_text) {
                 break;
             case "payment":
                 icon = "storefront";
+
+                if (["Bus-", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
+                    icon = "directions_bus";
+                    titleL = "Bus payment"
+                } else if (["Boat-"].some(s => station.includes(s))) {
+                    icon = "directions_boat";
+                    titleL = "Ferry payment"
+                }
+
                 titleL = "Merchant";
                 titleR = obj.data.station ? obj.data.station : '["IPID"=27]';
                 fare = -((Number(obj.data.price)).toFixed(2));
