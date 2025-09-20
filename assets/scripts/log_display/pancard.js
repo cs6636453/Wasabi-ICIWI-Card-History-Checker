@@ -22,9 +22,9 @@ async function payment_sort(raw_text) {
             station = "NULL";
         }
 
-        let fare = 0;
+        let fare = (0).toFixed(2);
         if (Number(obj.data.fare)) {
-            fare = Number(obj.data.fare);
+            fare = Number(obj.data.fare).toFixed(2);
         } else if (Number(obj.data.change)) {
             fare = Number(obj.data.change).toFixed(2);
         } else {
