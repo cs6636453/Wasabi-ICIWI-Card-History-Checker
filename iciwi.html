@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICIWI Transit Query</title>
+    <script>
+        window.onload = function() {
+            // Get the 'serial' parameter from URL
+            const params = new URLSearchParams(window.location.search);
+            const serial = params.get('serial');
+
+            console.log('Serial:', serial);
+
+            let request = document.getElementById("request");
+            if (serial) request.innerHTML = "Query for: " + serial;
+
+            let balance = document.getElementById("balance");
+
+            // Set the input value
+            let serial_box = document.getElementById("serial");
+            if (serial_box && serial !== null) {
+                serial_box.value = serial;
+            }
+
+            fetch_log(serial);
+        };
+    </script>
+    <script src="assets/scripts/log_display/fetch_log_iciwi.js"></script>
+    <script src="assets/scripts/log_display/pancard.js"></script>
+    <style>
+        table, tr, th, td {
+            border: 1px solid black;
+        }
+        tr, th, td {
+            padding: 5px 15px;
+        }
+        th {
+            background-color: lightgray;
+        }
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="iciwi.html">
+        <fieldset>
+            <legend>ICIWI Transit Query</legend>
+            <label for="serial">ICIWI No. </label>
+            <input type="text" placeholder="Bx-xxxxx" value="B" id="serial" pattern="B[A-Z]-[0-9]{1,5}" name="serial">
+            <button type="submit">Query</button>
+        </fieldset>
+    </form>
+    <h1 id="request"></h1>
+    <h3 id="balance"></h3>
+    <table id="result">
+        <tr>
+            <th>Timestamp</th>
+            <th>Station</th>
+            <th>Transaction type</th>
+            <th>Fare/Price</th>
+            <th>Balance left</th>
+        </tr>
+    </table>
+</body>
+</html>
