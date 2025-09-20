@@ -80,10 +80,10 @@ async function payment_sort(raw_text) {
             case "payment":
                 icon = "storefront";
 
-                if (["Bus-", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
+                if (["Bus-", "KTB", "ETB", "BRT"].some(s => obj.data.station.includes(s))) {
                     icon = "directions_bus";
                     titleL = "Bus payment"
-                } else if (["Boat-"].some(s => station.includes(s))) {
+                } else if (["Boat-"].some(s => obj.data.station.includes(s))) {
                     icon = "directions_boat";
                     titleL = "Ferry payment"
                 }
