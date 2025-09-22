@@ -30,7 +30,7 @@ function closePopup() {
 function checkCard() {
     const serial = getCookie('iciwi_serial');
     if (!serial) {
-        showPopup();
+        closePopup();
     }
 }
 
