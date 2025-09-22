@@ -15,7 +15,7 @@ function payment_render(raw_text) {
         payment_datetime.innerHTML = raw_text[i][1] + " | " + raw_text[i][2];
         let payment_title = document.createElement("p");
         payment_title.classList.add("payment_title");
-        payment_title.innerHTML = raw_text[i][3] + " - " + raw_text[i][4];
+        payment_title.innerHTML = raw_text[i][3] + " • " + raw_text[i][4];
         let payment_total = document.createElement("p");
         payment_total.classList.add("payment_total");
         if (raw_text[i][5] > 0) payment_total.classList.add("positive");
