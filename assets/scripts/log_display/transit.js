@@ -20,7 +20,7 @@ async function transit_sort(raw_text) {
                         table[j][1] = "directions_bus";
                     } else if (["Boat-"].some(s => station.includes(s))) {
                         table[j][1] = "directions_boat";
-                    } else if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => station.includes(s))) {
+                    } else if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru", "Screen"].some(s => station.includes(s))) {
                         continue; // skip this row
                     } else {
                         table[j][1] = "directions_railway";
@@ -31,7 +31,7 @@ async function transit_sort(raw_text) {
                     status = "entry";
                 } else if (status === "entry") {
                     const station = obj.data.nStation;
-                    if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => station.includes(s))) {
+                    if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru", "Screen"].some(s => station.includes(s))) {
                         continue; // skip this row
                     }
                     table[j][4] = true;
@@ -40,7 +40,7 @@ async function transit_sort(raw_text) {
                         table[j][1] = "directions_bus";
                     } else if (["Boat-"].some(s => station.includes(s))) {
                         table[j][1] = "directions_boat";
-                    } else if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => station.includes(s))) {
+                    } else if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru", "Screen"].some(s => station.includes(s))) {
                         continue; // skip this row
                     } else {
                         table[j][1] = "directions_railway";
@@ -64,7 +64,7 @@ async function transit_sort(raw_text) {
             case "card-exit":
                 if (status === "entry") {
                     const station = obj.data.xStation;
-                    if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => station.includes(s))) {
+                    if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru", "Screen"].some(s => station.includes(s))) {
                         continue; // skip this row
                     }
                     table[j][4] = false;
@@ -92,7 +92,7 @@ async function transit_sort(raw_text) {
                 } else if (status === "exit") {
                     if (table[j][0] === null) table[j][0] = logDate.toLocaleDateString(undefined, optionsDate);
                     const station = obj.data.xStation;
-                    if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => station.includes(s))) {
+                    if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru", "Screen"].some(s => station.includes(s))) {
                         continue; // skip this row
                     } else if (["Bus-", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
                         table[j][1] = "directions_bus";
@@ -129,7 +129,7 @@ async function transit_sort(raw_text) {
                 // date (of entry || exit if entry null) 0, icon 1, nTime 2, nStation 3,
                 // isInvalid 4, pass 5, fare 6, osi 7, xTime 8, xStation 9
                 if (obj.data.station) {
-                    if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru"].some(s => obj.data.station.includes(s))) {
+                    if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru", "Screen"].some(s => obj.data.station.includes(s))) {
                         continue; // skip this row
                     }
 
