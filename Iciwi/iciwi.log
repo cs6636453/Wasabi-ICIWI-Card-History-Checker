@@ -5091,3 +5091,4496 @@
     "xStation": "YCMainStation"
   }
 }
+{
+  "timestamp": "2025-09-03 13:02:38",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BJ-73763"
+  }
+}
+{
+  "timestamp": "2025-09-03 13:02:52",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BJ-73763",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:00:23",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "20.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BP-599"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:00:26",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "20.0",
+    "card": "BP-599",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:01:57",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "30.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BR-88452"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:02:08",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "30.0",
+    "card": "BR-88452",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:02:25",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BT-6262"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:02:32",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BT-6262",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:04:59",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BC-17550"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:05:05",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BC-17550",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:05:46",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BN-25698"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:05:49",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BN-25698",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:06:07",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BK-56107"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:06:12",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BK-56107",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:11:55",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BY-48214"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:12:03",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BY-48214",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:15:00",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BS-83914"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:15:08",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BS-83914",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:18:14",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BK-11076"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:18:38",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BK-11076",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:31:23",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BH-33494"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:31:25",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BT-77371"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:33:43",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BV-81676"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:33:45",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BV-81676",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:49:13",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BF-85725"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:49:24",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BF-85725",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:54:08",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BY-84228"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:54:29",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BR-77531"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:54:33",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BR-77531",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:54:58",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BR-20166"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:55:00",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BR-20166",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 14:55:03",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BY-84228",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-03 15:57:20",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "serial": "BG-75942"
+  }
+}
+{
+  "timestamp": "2025-09-03 15:57:23",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BG-75942",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-04 10:03:15",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BF-97189",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-04 10:08:00",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "Downtown",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "554.55",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-04 10:10:06",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "Downtown",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "554.55",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Downtown"
+  }
+}
+{
+  "timestamp": "2025-09-04 10:11:25",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BE-49754",
+    "player": "7252181f-3546-47b1-b17b-fa462000e7dc",
+    "value": "50.0"
+  }
+}
+{
+  "timestamp": "2025-09-04 10:14:07",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "Downtown",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "553.95",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-04 10:16:20",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "Downtown",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "553.95",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "true",
+    "nStation": "Downtown"
+  }
+}
+{
+  "timestamp": "2025-09-04 10:17:54",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BH-19857",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-04 10:18:00",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BH-19857",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-04 10:20:45",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "YCMainStation",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "553.95",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-04 10:20:50",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "YCMainStation",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "553.95",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "YCMainStation"
+  }
+}
+{
+  "timestamp": "2025-09-04 10:23:17",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BR-50447",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-04 10:23:28",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BR-50447",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-06 09:03:32",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BV-27540",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-06 09:03:37",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BV-27540",
+    "nStation": "Downtown",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-06 09:03:53",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Downtown",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "553.35"
+  }
+}
+{
+  "timestamp": "2025-09-06 09:03:56",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "Downtown",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "553.35",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Downtown"
+  }
+}
+{
+  "timestamp": "2025-09-06 09:34:29",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Kimitsuko",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "552.75"
+  }
+}
+{
+  "timestamp": "2025-09-06 09:34:31",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "Kimitsuko",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "552.75",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Kimitsuko"
+  }
+}
+{
+  "timestamp": "2025-09-06 09:39:20",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Chitose",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "552.75"
+  }
+}
+{
+  "timestamp": "2025-09-06 09:39:21",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "Chitose",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "552.75",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Chitose"
+  }
+}
+{
+  "timestamp": "2025-09-06 09:53:20",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Brentwood",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "552.15"
+  }
+}
+{
+  "timestamp": "2025-09-06 09:53:21",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "Brentwood",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "552.15",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Brentwood"
+  }
+}
+{
+  "timestamp": "2025-09-06 10:04:30",
+  "level": "INFO",
+  "message": "createTicket",
+  "data": {
+    "fareClass": "Second",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "from": "Shinten",
+    "to": "Kimitsu"
+  }
+}
+{
+  "timestamp": "2025-09-06 10:20:38",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Chitose",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "551.55"
+  }
+}
+{
+  "timestamp": "2025-09-06 10:20:40",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "Chitose",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "551.55",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Chitose"
+  }
+}
+{
+  "timestamp": "2025-09-06 10:29:27",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "LibraryKNUT",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95"
+  }
+}
+{
+  "timestamp": "2025-09-06 10:29:27",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "LibraryKNUT",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95"
+  }
+}
+{
+  "timestamp": "2025-09-06 10:29:36",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "LibraryKNUT",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "LibraryKNUT"
+  }
+}
+{
+  "timestamp": "2025-09-06 10:29:41",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "LibraryKNUT",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95"
+  }
+}
+{
+  "timestamp": "2025-09-06 10:29:44",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "LibraryKNUT",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "LibraryKNUT"
+  }
+}
+{
+  "timestamp": "2025-09-06 12:27:35",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Kimitsuko",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95"
+  }
+}
+{
+  "timestamp": "2025-09-06 12:27:37",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "Kimitsuko",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Kimitsuko"
+  }
+}
+{
+  "timestamp": "2025-09-06 12:53:58",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Screen1",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95"
+  }
+}
+{
+  "timestamp": "2025-09-06 12:54:22",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Screen1",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95"
+  }
+}
+{
+  "timestamp": "2025-09-06 12:54:22",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Screen1",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95"
+  }
+}
+{
+  "timestamp": "2025-09-06 12:54:22",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Screen1",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95"
+  }
+}
+{
+  "timestamp": "2025-09-06 12:54:22",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Screen1",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95"
+  }
+}
+{
+  "timestamp": "2025-09-06 12:54:47",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Screen1",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95"
+  }
+}
+{
+  "timestamp": "2025-09-06 12:55:17",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Screen1",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95"
+  }
+}
+{
+  "timestamp": "2025-09-06 12:55:35",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "Kotoha",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Screen1"
+  }
+}
+{
+  "timestamp": "2025-09-06 12:58:44",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Cinemaru",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95"
+  }
+}
+{
+  "timestamp": "2025-09-06 12:58:51",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "Screen1",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "550.95",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Cinemaru"
+  }
+}
+{
+  "timestamp": "2025-09-07 09:28:02",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "KTB-MN003",
+    "serial": "BN-7487",
+    "value": "550.45",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-07 09:28:04",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "fare": "0.0",
+    "xStation": "KTB-MN003",
+    "nStation": "KTB-MN003",
+    "osi": "false",
+    "serial": "BN-7487",
+    "railPass": "",
+    "value": "550.45",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-07 09:28:22",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "KTB-KN003",
+    "serial": "BN-7487",
+    "value": "550.45",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-07 09:28:23",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "fare": "0.0",
+    "xStation": "KTB-KN003",
+    "nStation": "KTB-KN003",
+    "osi": "false",
+    "serial": "BN-7487",
+    "railPass": "",
+    "value": "550.45",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-07 09:55:57",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "Minami-Chitose",
+    "serial": "BN-7487",
+    "value": "548.35",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-07 09:55:58",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "fare": "0.0",
+    "xStation": "Minami-Chitose",
+    "nStation": "Minami-Chitose",
+    "osi": "false",
+    "serial": "BN-7487",
+    "railPass": "",
+    "value": "548.35",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-07 09:56:17",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "Minami-Chitose",
+    "serial": "BV-27540",
+    "value": "10.0",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb"
+  }
+}
+{
+  "timestamp": "2025-09-07 09:56:56",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "fare": "0.0",
+    "xStation": "Kimitsuko",
+    "nStation": "Minami-Chitose",
+    "osi": "false",
+    "serial": "BV-27540",
+    "railPass": "",
+    "value": "10.0",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb"
+  }
+}
+{
+  "timestamp": "2025-09-07 10:01:30",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BV-27540",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb"
+  }
+}
+{
+  "timestamp": "2025-09-07 10:01:36",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb",
+    "serial": "BA-32034"
+  }
+}
+{
+  "timestamp": "2025-09-07 10:05:07",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "LibraryKNUT",
+    "serial": "BN-7487",
+    "value": "548.35",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-07 10:05:09",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "fare": "0.0",
+    "xStation": "LibraryKNUT",
+    "nStation": "LibraryKNUT",
+    "osi": "false",
+    "serial": "BN-7487",
+    "railPass": "",
+    "value": "548.35",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-07 12:28:38",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "Epping",
+    "serial": "BA-32034",
+    "value": "10.0",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb"
+  }
+}
+{
+  "timestamp": "2025-09-07 12:33:34",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "fare": "0.0",
+    "xStation": "Downtown",
+    "nStation": "Epping",
+    "osi": "false",
+    "serial": "BA-32034",
+    "railPass": "",
+    "value": "10.0",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb"
+  }
+}
+{
+  "timestamp": "2025-09-08 02:30:06",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "Downtown",
+    "serial": "BA-21007",
+    "value": "9.2",
+    "player": "c4c9b1f3-f3ce-40be-9c59-79b62ef4e852"
+  }
+}
+{
+  "timestamp": "2025-09-08 02:34:15",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "value": "9.2",
+    "player": "c4c9b1f3-f3ce-40be-9c59-79b62ef4e852",
+    "fare": "0.0",
+    "xStation": "Eastminster",
+    "nStation": "Downtown",
+    "osi": "false",
+    "serial": "BA-21007",
+    "railPass": ""
+  }
+}
+{
+  "timestamp": "2025-09-08 02:35:52",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BB-43835",
+    "value": "10.0",
+    "player": "c4c9b1f3-f3ce-40be-9c59-79b62ef4e852"
+  }
+}
+{
+  "timestamp": "2025-09-08 02:36:16",
+  "level": "INFO",
+  "message": "top-up-card",
+  "data": {
+    "card": "BB-43835",
+    "old": "10.0",
+    "change": "10.0",
+    "player": "c4c9b1f3-f3ce-40be-9c59-79b62ef4e852"
+  }
+}
+{
+  "timestamp": "2025-09-08 02:36:19",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "KTB-EN101x",
+    "serial": "BB-43835",
+    "value": "20.0",
+    "player": "c4c9b1f3-f3ce-40be-9c59-79b62ef4e852"
+  }
+}
+{
+  "timestamp": "2025-09-08 02:36:20",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "value": "20.0",
+    "player": "c4c9b1f3-f3ce-40be-9c59-79b62ef4e852",
+    "fare": "0.0",
+    "xStation": "KTB-EN101x",
+    "nStation": "KTB-EN101x",
+    "osi": "false",
+    "serial": "BB-43835",
+    "railPass": ""
+  }
+}
+{
+  "timestamp": "2025-09-08 02:36:47",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "Eastminster",
+    "serial": "BB-43835",
+    "value": "19.3",
+    "player": "c4c9b1f3-f3ce-40be-9c59-79b62ef4e852"
+  }
+}
+{
+  "timestamp": "2025-09-08 02:37:17",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "value": "19.3",
+    "player": "c4c9b1f3-f3ce-40be-9c59-79b62ef4e852",
+    "fare": "0.0",
+    "xStation": "Sakauji",
+    "nStation": "Eastminster",
+    "osi": "false",
+    "serial": "BB-43835",
+    "railPass": ""
+  }
+}
+{
+  "timestamp": "2025-09-08 13:16:22",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "TulipPeak",
+    "serial": "BA-32034",
+    "value": "10.0",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb"
+  }
+}
+{
+  "timestamp": "2025-09-08 13:23:40",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "value": "10.0",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb",
+    "fare": "0.0",
+    "xStation": "Downtown",
+    "nStation": "TulipPeak",
+    "osi": "false",
+    "serial": "BA-32034",
+    "railPass": ""
+  }
+}
+{
+  "timestamp": "2025-09-08 13:24:47",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "Downtown",
+    "serial": "BA-32034",
+    "value": "7.7",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb"
+  }
+}
+{
+  "timestamp": "2025-09-11 15:20:32",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "548.35",
+    "serial": "BN-7487",
+    "nStation": "Kimitsuko"
+  }
+}
+{
+  "timestamp": "2025-09-11 15:20:33",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "548.35",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Kimitsuko",
+    "xStation": "Kimitsuko"
+  }
+}
+{
+  "timestamp": "2025-09-12 10:00:27",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-7487",
+    "nStation": "Shinten",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "548.35"
+  }
+}
+{
+  "timestamp": "2025-09-12 10:00:27",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "xStation": "Shinten",
+    "fare": "0.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "548.35",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Shinten"
+  }
+}
+{
+  "timestamp": "2025-09-13 13:00:21",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BP-12617",
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-13 13:00:25",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "value": "10.0",
+    "card": "BP-12617",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:36:23",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KonnoUniversity",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:36:29",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KonnoUniversity",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:37:56",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "railPass": "",
+    "value": "547.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "fare": "0.0",
+    "xStation": "KonnoUniversity",
+    "nStation": "KonnoUniversity",
+    "osi": "false",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:37:59",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KonnoUniversity",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:38:25",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KonnoUniversity",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:38:37",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KonnoUniversity",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:38:39",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "railPass": "",
+    "value": "547.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "fare": "0.0",
+    "xStation": "KonnoUniversity",
+    "nStation": "KonnoUniversity",
+    "osi": "false",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:40:12",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KNUT",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:40:14",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "railPass": "",
+    "value": "547.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "fare": "0.0",
+    "xStation": "KNUT",
+    "nStation": "KNUT",
+    "osi": "false",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:40:17",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KNUT",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:40:19",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "railPass": "",
+    "value": "547.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "fare": "0.0",
+    "xStation": "KNUT",
+    "nStation": "KNUT",
+    "osi": "false",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:40:21",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KNUT",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:40:25",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KNUT",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:40:34",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "railPass": "",
+    "value": "547.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "fare": "0.0",
+    "xStation": "KNUT",
+    "nStation": "KNUT",
+    "osi": "false",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:41:53",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KNUT",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:41:56",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "railPass": "",
+    "value": "547.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "fare": "0.0",
+    "xStation": "KNUT",
+    "nStation": "KNUT",
+    "osi": "false",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:46:54",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KNUT",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:46:58",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "railPass": "",
+    "value": "547.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "fare": "0.0",
+    "xStation": "KNUT",
+    "nStation": "KNUT",
+    "osi": "false",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:48:08",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KNUT",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:48:11",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "railPass": "",
+    "value": "547.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "fare": "0.0",
+    "xStation": "KNUT",
+    "nStation": "KNUT",
+    "osi": "false",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:48:34",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KNUT",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:48:37",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "railPass": "",
+    "value": "547.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "fare": "0.0",
+    "xStation": "KNUT",
+    "nStation": "KNUT",
+    "osi": "false",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:50:33",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KNUT",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:50:34",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "railPass": "",
+    "value": "547.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "fare": "0.0",
+    "xStation": "KNUT",
+    "nStation": "KNUT",
+    "osi": "false",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:50:51",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KNUT",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:50:52",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "railPass": "",
+    "value": "547.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "fare": "0.0",
+    "xStation": "KNUT",
+    "nStation": "KNUT",
+    "osi": "false",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:51:13",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "nStation": "KNUT",
+    "serial": "BN-7487",
+    "value": "547.75"
+  }
+}
+{
+  "timestamp": "2025-09-13 14:51:15",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "railPass": "",
+    "value": "547.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "fare": "0.0",
+    "xStation": "KNUT",
+    "nStation": "KNUT",
+    "osi": "false",
+    "serial": "BN-7487"
+  }
+}
+{
+  "timestamp": "2025-09-15 05:15:06",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BA-32034",
+    "nStation": "Kasuga",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb",
+    "value": "7.7"
+  }
+}
+{
+  "timestamp": "2025-09-15 05:22:42",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "osi": "false",
+    "nStation": "Kasuga",
+    "xStation": "Rising Sun",
+    "fare": "0.0",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb",
+    "value": "7.7",
+    "railPass": "",
+    "serial": "BA-32034"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:10:29",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "547.75",
+    "serial": "BN-7487",
+    "nStation": "KTB-MN110x"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:12:44",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "547.75",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "KTB-MN110x",
+    "xStation": "KTB-KS004",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:12:52",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "547.05",
+    "serial": "BN-7487",
+    "nStation": "KTB-KN004"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:18:59",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "547.05",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "true",
+    "nStation": "KTB-KN004",
+    "xStation": "KTB-KN007",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:26:28",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "546.65",
+    "serial": "BN-7487",
+    "nStation": "Chitose"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:26:29",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "546.65",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Chitose",
+    "xStation": "Chitose",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:27:56",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "546.05",
+    "serial": "BN-7487",
+    "nStation": "Minami-Chitose"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:28:11",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "546.05",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Minami-Chitose",
+    "xStation": "Kimitsuko",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:31:49",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "546.05",
+    "serial": "BN-7487",
+    "nStation": "YCMainStation"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:32:00",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "546.05",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "YCMainStation",
+    "xStation": "YCMainStation",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:32:07",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "545.45",
+    "serial": "BN-7487",
+    "nStation": "YCMainStation"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:32:08",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "545.45",
+    "serial": "BN-7487",
+    "nStation": "YCMainStation"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:32:09",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "545.45",
+    "serial": "BN-7487",
+    "nStation": "YCMainStation"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:32:10",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "545.45",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "true",
+    "nStation": "YCMainStation",
+    "xStation": "YCMainStation",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:32:17",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BS-37893",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "100.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:32:28",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BS-37893",
+    "value": "100.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:32:32",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BK-33116",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:32:38",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BK-33116",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:32:48",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BK-3384",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "20.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:33:03",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BV-67524",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "20.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:33:06",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BV-67524",
+    "value": "20.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:33:08",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BV-18222",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:33:26",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BV-18222",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:33:28",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BR-67294",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:33:34",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BR-67294",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:33:36",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BZ-63079",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:33:40",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BZ-63079",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:33:43",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BD-94634",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "100.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:33:54",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BD-94634",
+    "value": "100.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:34:14",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BB-54917",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:34:19",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BB-54917",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:34:21",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BH-29896",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "100.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:34:26",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BH-29896",
+    "value": "100.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:34:41",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BJ-95073",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:34:45",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BJ-95073",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:34:46",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BS-76659",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:34:52",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BS-76659",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:34:54",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BZ-94276",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:34:57",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BZ-94276",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:34:59",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BB-64441",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:03",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BB-64441",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:05",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BG-64363",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:08",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BR-64775",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:09",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BK-74832",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:12",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BT-45401",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:14",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BA-20444",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:16",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BP-42185",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:21",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BG-64363",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:24",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BR-64775",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:26",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BK-74832",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:30",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BT-45401",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:32",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BA-20444",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:35:35",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BP-42185",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:37:22",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BT-8558",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:40:46",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BE-62777",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:40:50",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BE-62777",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:40:52",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BK-74832",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:40:58",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BK-74832",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:40:59",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BK-14288",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:41:07",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BK-14288",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:41:08",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BZ-56499",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:41:13",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BZ-56499",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:41:20",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BC-67521",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "100.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:41:24",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BC-67521",
+    "value": "100.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:41:25",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BK-18381",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:41:29",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BK-18381",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:41:31",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BK-36328",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:41:36",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BK-36328",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:41:39",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BJ-67427",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:41:42",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BJ-67427",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:41:44",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BB-2099",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:43:38",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BU-59737",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:43:43",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BU-59737",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:43:45",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BN-85604",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:43:50",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BN-85604",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:43:52",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BH-39492",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:43:56",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BH-39492",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:43:58",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BJ-41773",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:44:01",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BJ-41773",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:44:03",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BY-16969",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:44:06",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BY-16969",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:44:08",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BY-42995",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:44:11",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BY-42995",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:44:13",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BG-1248",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:05",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BV-53621",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:09",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BV-53621",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:11",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BB-50823",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:16",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BB-50823",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:18",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BZ-65357",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:22",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BZ-65357",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:29",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BH-20226",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:31",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BR-61813",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:33",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BE-1140",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:35",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BY-47812",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:37",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BT-43922",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:40",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BN-24390",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:43",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BB-59073",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:45",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BY-16187",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:54",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BY-47812",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:47:57",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BT-43922",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:48:00",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BN-24390",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:48:03",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BB-59073",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:48:05",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BY-16187",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:48:08",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BR-61813",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:48:11",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BH-20226",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:50:23",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BR-87519",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:50:29",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BR-87519",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:50:41",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BT-10855",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:50:46",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BT-10855",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:02",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BG-80954",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:06",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BG-80954",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:08",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BP-39115",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:12",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BP-39115",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:14",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BU-65984",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:19",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BU-67374",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:21",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BR-95670",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:23",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BN-92785",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:25",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BC-60659",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:27",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BC-52400",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:29",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BC-93122",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:30",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BP-15081",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:37",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BP-15081",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:40",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BC-93122",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:42",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BC-52400",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:45",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BC-60659",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:47",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BN-92785",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:50",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BR-95670",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:53",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BU-67374",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:51:58",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BU-65984",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:52:01",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BN-60582",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:52:13",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BN-60582",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:52:21",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BB-2099",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:52:24",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BG-1248",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:52:51",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BZ-68410",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:52:57",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BZ-68410",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:52:59",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BP-11433",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:53:06",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BH-25911",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:53:09",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BN-81970",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:53:10",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BU-83131",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:53:15",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BU-83131",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:53:18",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BN-81970",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:53:21",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BH-25911",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:53:24",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BP-11433",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:53:52",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BV-60449",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:53:55",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BV-60449",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:54:03",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BE-1140",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:55:25",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BU-23173",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:55:30",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BU-23173",
+    "value": "10.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:56:11",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "545.45",
+    "serial": "BN-7487",
+    "nStation": "Downtown"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:56:18",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "545.45",
+    "railPass": "",
+    "serial": "BN-7487",
+    "osi": "false",
+    "nStation": "Downtown",
+    "xStation": "Downtown",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:12",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "20.0",
+    "serial": "BK-3384",
+    "nStation": "Downtown"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:15",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "20.0",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "false",
+    "nStation": "Downtown",
+    "xStation": "Downtown",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:19",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "19.4",
+    "serial": "BK-3384",
+    "nStation": "Downtown"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:21",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "19.4",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "Downtown",
+    "xStation": "Downtown",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:24",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "19.4",
+    "serial": "BK-3384",
+    "nStation": "Downtown"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:27",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "19.4",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "Downtown",
+    "xStation": "Downtown",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:54",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "18.8",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:54",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "18.8",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "false",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:55",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "18.1",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:55",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "18.1",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:56",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "18.1",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:56",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "18.1",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:57",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "17.4",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:57",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "17.4",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:58",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "17.4",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:58",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "17.4",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:58",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "16.7",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:59",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "16.7",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:59",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "16.7",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:59",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "16.7",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:59",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "16.0",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:59",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "16.0",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 11:59:59",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "16.0",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:00",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "16.0",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:00",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "15.3",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:00",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "15.3",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:00",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "15.3",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:01",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "15.3",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:01",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "14.6",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:01",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "14.6",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:01",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "14.6",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:01",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "14.6",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:02",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "13.9",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:02",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "13.9",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:02",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "13.9",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:03",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "13.9",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:03",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "13.2",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:04",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "13.2",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:04",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "13.2",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:04",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "13.2",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:04",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "12.5",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:04",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "12.5",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:05",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "12.5",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:05",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "12.5",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:05",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "11.8",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:05",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "11.8",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:05",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "11.8",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:06",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "11.8",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:06",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "11.1",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:06",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "11.1",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:06",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "11.1",
+    "serial": "BK-3384",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:07",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "11.1",
+    "railPass": "",
+    "serial": "BK-3384",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:35",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BK-3384",
+    "value": "0.4"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:38",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:39",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.0",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "false",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:40",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "9.3",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:41",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "9.3",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:43",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "9.3",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:44",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "9.3",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:44",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "8.6",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:45",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "8.6",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:45",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "8.6",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:45",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "8.6",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:46",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "7.9",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:46",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "7.9",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:46",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "7.9",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:47",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "7.9",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:47",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "7.2",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:47",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "7.2",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:48",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "7.2",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:48",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "7.2",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:48",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "6.5",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:49",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "6.5",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:49",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "6.5",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:49",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "6.5",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:50",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "5.8",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:50",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "5.8",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:50",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "5.8",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:51",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "5.8",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:51",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "5.1",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:52",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "5.1",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:52",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "5.1",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:52",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "5.1",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:53",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "4.4",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:53",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "4.4",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:54",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "4.4",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:54",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "4.4",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:54",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "3.7",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:55",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "3.7",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:55",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "3.7",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:55",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "3.7",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:56",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "3.0",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:56",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "3.0",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:57",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "3.0",
+    "serial": "BT-8558",
+    "nStation": "KTB-KS003"
+  }
+}
+{
+  "timestamp": "2025-09-20 12:00:57",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "3.0",
+    "railPass": "",
+    "serial": "BT-8558",
+    "osi": "true",
+    "nStation": "KTB-KS003",
+    "xStation": "KTB-KS003",
+    "fare": "0.0"
+  }
+}
+{
+  "timestamp": "2025-09-21 10:24:07",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "KTB-KN008",
+    "serial": "BN-7487",
+    "value": "544.85",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-21 10:27:44",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "fare": "0.0",
+    "xStation": "KTB-KS004",
+    "nStation": "KTB-KN008",
+    "osi": "false",
+    "serial": "BN-7487",
+    "railPass": "",
+    "value": "544.85",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-21 10:27:45",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "KTB-KS004",
+    "serial": "BN-7487",
+    "value": "544.15",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-21 10:34:34",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "fare": "0.0",
+    "xStation": "KTB-MS107x",
+    "nStation": "KTB-KS004",
+    "osi": "true",
+    "serial": "BN-7487",
+    "railPass": "",
+    "value": "544.15",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-21 13:01:52",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "KTB-MS107x",
+    "serial": "BN-7487",
+    "value": "543.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-21 13:10:17",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "fare": "0.0",
+    "xStation": "KTB-ES101x",
+    "nStation": "KTB-MS107x",
+    "osi": "false",
+    "serial": "BN-7487",
+    "railPass": "",
+    "value": "543.75",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-21 13:10:58",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "nStation": "Eastminster",
+    "serial": "BN-7487",
+    "value": "542.85",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-09-21 13:16:01",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "fare": "0.0",
+    "xStation": "Rising Sun",
+    "nStation": "Eastminster",
+    "osi": "false",
+    "serial": "BN-7487",
+    "railPass": "",
+    "value": "542.85",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
