@@ -49,7 +49,7 @@ async function payment_sort(raw_text) {
                     icon = "directions_boat";
                     titleL = "Ferry payment";
                     titleR = '["IPID"=21]';
-                } else if (["IICP", "Cinemaru"].some(s => station.includes(s))) {
+                } else if (["IICP", "Cinemaru", "Screen"].some(s => station.includes(s))) {
                     icon = "storefront";
                     titleL = "Merchant";
                     titleR = "CINEMARU";
