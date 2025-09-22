@@ -7,7 +7,7 @@ async function fetch_log() {
     const serial = getCookie('iciwi_serial');
 
     try {
-        const resp = await fetch("../../../Iciwi/iciwi.log", { cache: "no-store" });
+        const resp = await fetch("/iciwi.log", { cache: "no-store" });
         if (!resp.ok) throw new Error("Failed to fetch iciwi.log: " + resp.status);
 
         const text = await resp.text();
