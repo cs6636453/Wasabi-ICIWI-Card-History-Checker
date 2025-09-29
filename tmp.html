@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png"/>
+
+    <!-- Mobile-first design -->
+    <link rel="stylesheet" href="assets/stylesheets/template.css">
+
+    <!-- Import Google fonts logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@1" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title class="mobile">My ICIWI</title>
+    <title class="desktop">Transit Query | ICIWI Card</title>
+
+    <script src="assets/scripts/page_control.js"></script>
+    <script src="assets/scripts/card_render.js"></script>
+    <script src="assets/scripts/unbind_card.js"></script>
+<!--    <script src="assets/scripts/card_log.js" defer></script>-->
+    <script src="assets/scripts/log_display/fetch_log.js"></script>
+    <script src="assets/scripts/log_display/payment.js"></script>
+    <script src="assets/scripts/log_display/transit.js"></script>
+    <script src="assets/scripts/log_display/render.js"></script>
+</head>
+<body oncontextmenu="return false;">
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Nav section -->
+    <nav>
+        <a href="#" id="go_transit" class="active" onclick="page_transit()"><span class="material-symbols-outlined">bus_railway</span><div class="nav_text">Trip details</div></a>
+        <a href="#" id="go_payment" onclick="page_payment()"><span class="material-symbols-outlined">receipt_long</span><div class="nav_text">Other transactions</div></a>
+        <a href="#" id="go_account" onclick="page_account()"><span class="material-symbols-outlined">credit_card_gear</span></a>
+    </nav>
+
+    <div class="overlay" id="popupOverlay">
+        <div class="popup">
+            <h2>Session Invalid</h2>
+            <p>Please try again, if this still happen please contact TJT.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="confirmOverlay">
+        <div class="popup">
+            <button class="top-close" onclick="cancelUnbind()">×</button>
+            <h2>Unbind Card</h2>
+            <p>Are you sure you want to unbind your card?</p>
+            <button class="confirm" onclick="confirmUnbind()">Yes</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <img src="assets/favicon.png" alt="TJT Icon">
+        <h1 id="mobile_header">My ICIWI</h1>
+        <h1 id="desktop_header">ICIWI Card | Transit Query</h1>
+    </header>
+
+    <main>
+
+        <!-- Dev here -->
+        <section id="card">
+            <img src="assets/images/wasabi_pancard.png" alt="pancard and Wasabi card">
+            <p id="balance_text"></p>
+            <p id="card_balance"></p>
+            <p id="expiry_date"></p>
+            <p id="card_number"></p>
+            <p id="card_name"></p>
+            <input type="button" id="unbind_card_pc" value="Unbind card">
+            <footer class="card_pc">This web-app is made for Minecraft Limaru City Server. It's for roleplay purpose, nothing related in real-life resources.</footer>
+            <footer class="card_pc">Testing system, you may only bind 1 card at a time.</footer>
+            <!-- <footer class="card_pc">Data shown is before 31 August 2025 by now.</footer> -->
+        </section>
+
+
+
+        <section id="transit_history">
+
+            <div id="loader_transit">
+                <div class="spinner"></div>
+            </div>
+            <p class="transit_header">Trip details</p>
+<!--            <div class="transit_details">-->
+<!--                <p class="transit_date">16 Sep 2025</p>-->
+<!--                <div class="transit_drawmap">-->
+<!--                    <p class="transit_time">21:59:00</p>-->
+<!--                    <div class="transit_dot"></div>-->
+<!--                    <span class="material-symbols-outlined">directions_subway</span>-->
+<!--                    <p class="transit_station">Downtown</p>-->
+<!--                </div>-->
+<!--                <div class="transit_line_osi"></div>-->
+<!--                <div class="transit_drawmap drawmap_dest">-->
+<!--                    <p class="transit_time">22:00:00</p>-->
+<!--                    <div class="transit_dot"></div>-->
+<!--                    <span class="material-symbols-outlined">directions_subway</span>-->
+<!--                    <p class="transit_station">Legacy Road</p>-->
+<!--                </div>-->
+<!--                <div class="transit_invalid">Entry invalid</div>-->
+<!--                <div class="transit_pass">KTB_S_PASS</div>-->
+<!--                <div class="transit_fare_detail">-->
+<!--                    <div class="transit_fare">£ 3.00</div>-->
+<!--                    <div class="transit_osi">OSI discounted</div>-->
+<!--                </div>-->
+<!--            </div>-->
+                    </section>
+
+        <section id="payment_history">
+
+            <div id="loader_payment">
+                <div class="spinner"></div>
+            </div>
+            <p class="payment_header">Other transactions</p>
+<!--            <div class="payment_details">-->
+<!--                <span class="material-symbols-outlined">tram</span>-->
+<!--                <div class="payment_text">-->
+<!--                    <p class="payment_datetime">16 Sep 2025 | 21:31</p>-->
+<!--                    <p class="payment_title">Fare payment - Downtown</p>-->
+<!--                </div>-->
+<!--                <p class="payment_total negative">-->
+<!--                    -£ 3.00-->
+<!--                </p>-->
+<!--            </div>-->
+        </section>
+
+        <section id="my_account">
+<!--            <p class="account_header">My Card</p>-->
+            <input type="button" id="unbind_card" value="Unbind card">
+            <footer>This web-app is made for Minecraft Limaru City Server. It's for roleplay purpose, nothing related in real-life resources.</footer>
+            <footer>Testing system, you may only bind 1 card at a time.</footer>
+            <!-- <footer>Data shown is before 31 August 2025 by now.</footer> -->
+        </section>
+    </main>
+</body>
+</html>
