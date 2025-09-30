@@ -75,8 +75,8 @@ async function transit_sort(raw_text) {
 
                     table[j][9] = obj.data.xStation;
 
-                    if (Number(obj.data.fare) === 0 && i < rowCount - 1) {
-                        const tmp_next = raw_text[i+1];
+                    if (Number(Math.abs(obj.data.fare)) === 0 && i > 0) {
+                        const tmp_next = raw_text[i-1];
                         if (tmp_next) {
                             const currentValue = Number(obj.data.value || 0);
                             const nextValue = Number(tmp_next.data.value || 0);
@@ -86,6 +86,7 @@ async function transit_sort(raw_text) {
                             }
                         }
                     }
+
                     test_fare -= Math.abs(table[j][6]);
                     j++;
                     status = "exit";
@@ -109,8 +110,8 @@ async function transit_sort(raw_text) {
 
                     table[j][9] = obj.data.xStation;
 
-                    if (Number(obj.data.fare) === 0 && i < rowCount - 1) {
-                        const tmp_next = raw_text[i+1];
+                    if (Number(Math.abs(obj.data.fare)) === 0 && i > 0) {
+                        const tmp_next = raw_text[i-1];
                         if (tmp_next) {
                             const currentValue = Number(obj.data.value || 0);
                             const nextValue = Number(tmp_next.data.value || 0);
@@ -145,8 +146,8 @@ async function transit_sort(raw_text) {
                     }
                     table[j][4] = "payment_transit_tag";
                     table[j][6] = -(Number(obj.data.price));
-                    if (Number(obj.data.price) === 0 && i < rowCount - 1) {
-                        const tmp_next = raw_text[i+1];
+                    if (Number(Math.abs(obj.data.price)) === 0 && i > 0) {
+                        const tmp_next = raw_text[i-1];
                         if (tmp_next) {
                             const currentValue = Number(obj.data.value || 0);
                             const nextValue = Number(tmp_next.data.value || 0);

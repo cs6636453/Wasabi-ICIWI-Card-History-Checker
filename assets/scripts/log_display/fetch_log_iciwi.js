@@ -1,6 +1,6 @@
 async function fetch_log(serial) {
     try {
-        console.log(serial);
+        // console.log(serial);
         const resp = await fetch("../../../../iciwi.log", { cache: "no-store" });
         if (!resp.ok) throw new Error("Failed to fetch iciwi.log: " + resp.status);
 
@@ -52,7 +52,7 @@ async function fetch_log(serial) {
 
         appendToTable(parsed_table);
 
-        console.log(parsed_table);
+        // console.log(parsed_table);
 
         // ✅ Correct way to hide loader
         const loader2 = document.getElementById('loader-overlay-2');

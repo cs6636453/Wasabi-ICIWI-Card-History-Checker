@@ -100,6 +100,8 @@ async function fetch_log() {
 
         result = "Exp. "+result.slice(3);
 
+        // console.log(parsed_text);
+        // console.log(parsed_text_transit);
 
         payment_render(parsed_text);
         transit_render(parsed_text_transit);
@@ -113,7 +115,7 @@ async function fetch_log() {
         loader_transit.classList.add("hidden");
 
     } catch(e) {
-        console.log(e);
+        // console.log(e);
         const serial = getCookie('iciwi_serial');
         card_render_invalid(serial)
 
