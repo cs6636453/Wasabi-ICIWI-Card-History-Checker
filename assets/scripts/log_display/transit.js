@@ -1,4 +1,4 @@
-async function transit_sort(raw_text) {
+S3async function transit_sort(raw_text) {
     const rowCount = raw_text.length;
     const colCount = 10;
     const table = Array.from({ length: rowCount }, () => Array(colCount).fill(null));
@@ -228,7 +228,7 @@ function transit_filter(raw_text) {
 }
 
 async function getKtbStation(code) {
-    let response = await fetch('https://masstransit.wasabi.winsanmwtv.me/api/ktb/station-mapping.json');
+    let response = await fetch('https://masstransit.wasabi.winsanmwtv.me/api/ktb/station-mapping.json', { cache: "no-store" });
     let rawData = await response.text();
     obj = JSON.parse(rawData);
 
