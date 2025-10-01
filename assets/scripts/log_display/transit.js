@@ -15,7 +15,7 @@ async function transit_sort(raw_text) {
         switch (obj.message) {
             case "card-entry":
                 if (status === "exit") {
-                    const station = obj.data.nStation;
+                    let station = obj.data.nStation;
                     if (["Bus-", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
                         table[j][1] = "directions_bus";
                     } else if (["Boat-"].some(s => station.includes(s))) {
@@ -27,10 +27,14 @@ async function transit_sort(raw_text) {
                     }
                     table[j][0] = logDate.toLocaleDateString(undefined, optionsDate);
                     table[j][2] = logDate.toLocaleTimeString(undefined, optionsTime);
+                    if (station.includes("KTB-")) {
+                        let tmp = station.slice(4);
+                        station = await getKtbStation(tmp);
+                    }
                     table[j][3] = station;
                     status = "entry";
                 } else if (status === "entry") {
-                    const station = obj.data.nStation;
+                    let station = obj.data.nStation;
                     if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru", "Screen"].some(s => station.includes(s))) {
                         continue; // skip this row
                     }
@@ -47,6 +51,10 @@ async function transit_sort(raw_text) {
                     }
                     table[j][0] = logDate.toLocaleDateString(undefined, optionsDate);
                     table[j][2] = logDate.toLocaleTimeString(undefined, optionsTime);
+                    if (station.includes("KTB-")) {
+                        let tmp = station.slice(4);
+                        station = await getKtbStation(tmp);
+                    }
                     table[j][3] = station;
                     status = "entry";
                     const tmp_next = raw_text[i+1];
@@ -63,7 +71,7 @@ async function transit_sort(raw_text) {
                 break;
             case "card-exit":
                 if (status === "entry") {
-                    const station = obj.data.xStation;
+                    let station = obj.data.xStation;
                     if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru", "Screen"].some(s => station.includes(s))) {
                         continue; // skip this row
                     }
@@ -72,8 +80,11 @@ async function transit_sort(raw_text) {
                     table[j][6] = -(Number(obj.data.fare));
                     table[j][7] = obj.data.osi;
                     table[j][8] = logDate.toLocaleTimeString(undefined, optionsTime);
-
-                    table[j][9] = obj.data.xStation;
+                    if (station.includes("KTB-")) {
+                        let tmp = station.slice(4);
+                        station = await getKtbStation(tmp);
+                    }
+                    table[j][9] = station;
 
                     if (Number(Math.abs(obj.data.fare)) === 0 && i > 0) {
                         const tmp_next = raw_text[i-1];
@@ -92,7 +103,7 @@ async function transit_sort(raw_text) {
                     status = "exit";
                 } else if (status === "exit") {
                     if (table[j][0] === null) table[j][0] = logDate.toLocaleDateString(undefined, optionsDate);
-                    const station = obj.data.xStation;
+                    let station = obj.data.xStation;
                     if (["LibraryKNUT", "CentralLibrary", "BaanRattana", "IICP", "Cinemaru", "Screen"].some(s => station.includes(s))) {
                         continue; // skip this row
                     } else if (["Bus-", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
@@ -107,8 +118,11 @@ async function transit_sort(raw_text) {
                     table[j][6] = -(Number(obj.data.fare));
                     table[j][7] = obj.data.osi;
                     table[j][8] = logDate.toLocaleTimeString(undefined, optionsTime);
-
-                    table[j][9] = obj.data.xStation;
+                    if (station.includes("KTB-")) {
+                        let tmp = station.slice(4);
+                        station = await getKtbStation(tmp);
+                    }
+                    table[j][9] = station;
 
                     if (Number(Math.abs(obj.data.fare)) === 0 && i > 0) {
                         const tmp_next = raw_text[i-1];
@@ -211,4 +225,17 @@ function transit_filter(raw_text) {
     }
 
     return raw_text;
+}
+
+async function getKtbStation(code) {
+    let response = await fetch('https://masstransit.wasabi.winsanmwtv.me/api/ktb/station-mapping.json');
+    let rawData = await response.text();
+    obj = JSON.parse(rawData);
+
+    console.log(rawData);
+
+    for (let i = 0; i < obj.data.length; i++) {
+        if (Number(code) === Number(obj.data[i].ktb)) return obj.data[i].name;
+    }
+    return "KTB Bus Stop";
 }
