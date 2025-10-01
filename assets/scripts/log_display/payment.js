@@ -57,7 +57,7 @@ async function payment_sort(raw_text) {
                     icon = "school";
                     titleL = "Education";
                     titleR = "KONNO UNIV";
-                } else if (station.includes("BaanRattana")) {
+                } else if (["BaanRattana", "Not in use"].some(s => station.includes(s))) {
                     continue; // skip this row
                 }
 
