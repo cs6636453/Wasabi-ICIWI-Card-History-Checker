@@ -1,44 +1,18 @@
+function getCookie(name) {
+    const m = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]*)'));
+    return m ? decodeURIComponent(m[2]) : null;
+}
+
 async function fetch_log() {
-    const serial = getCookie("iciwi_serial");
+    const serial = getCookie('iciwi_serial');
 
     try {
-        const resp = await fetch("https://bluemap.limaru.net/iciwi.log", { cache: "no-store" });
+        const resp = await fetch("../../../../../../../iciwi.log", { cache: "no-store" });
         if (!resp.ok) throw new Error("Failed to fetch iciwi.log: " + resp.status);
 
-        const htmlText = await resp.text();
+        const text = await resp.text();
+        const lines = text.split("\n");
 
-        // --- Step 1: Extract log from HTML ---
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(htmlText, "text/html");
-
-        // assuming the log is inside <pre> or <body>, adjust if needed
-        let logText = doc.querySelector("pre")?.textContent ?? doc.body.textContent ?? "";
-
-        if (!logText.trim()) {
-            console.warn("No log text found in HTML");
-            payment_render([]);
-            transit_render([]);
-            card_render_invalid(serial);
-            document.getElementById("loader_payment")?.classList.add("hidden");
-            document.getElementById("loader_transit")?.classList.add("hidden");
-            return;
-        }
-
-        // --- Step 2: Split by newline and parse each JSON object ---
-        const logs = logText
-            .trim()
-            .split("\n")
-            .map(line => {
-                try {
-                    return JSON.parse(line);
-                } catch (err) {
-                    console.warn("Failed to parse line as JSON:", line, err);
-                    return null;
-                }
-            })
-            .filter(obj => obj !== null);
-
-        // --- Step 3: Filter by allowed messages + serial ---
         const allowedMessages = new Set([
             "new-card",
             "top-up-card",
@@ -48,82 +22,108 @@ async function fetch_log() {
             "payment"
         ]);
 
-        const matchedObjects = logs.filter(obj => {
-            const objSerial = obj.data?.serial ?? obj.data?.card;
-            return allowedMessages.has(obj.message) && objSerial === serial;
-        });
+        const matchedObjects = [];
 
-        if (!matchedObjects.length) {
-            console.warn("No matching logs for serial:", serial);
-            payment_render([]);
-            transit_render([]);
-            card_render_invalid(serial);
-            document.getElementById("loader_payment")?.classList.add("hidden");
-            document.getElementById("loader_transit")?.classList.add("hidden");
-            return;
+        let buffer = "";
+
+        for (const line of lines) {
+            buffer += line; // accumulate lines
+
+            try {
+                const obj = JSON.parse(buffer);
+
+                // check message and serial
+                const objSerial = obj.data?.serial ?? obj.data?.card; // fallback to 'card' if 'serial' doesn't exist
+                if (allowedMessages.has(obj.message) && objSerial === serial) {
+                    matchedObjects.push({
+                        timestamp: obj.timestamp,
+                        message: obj.message,
+                        data: obj.data
+                    });
+                }
+
+                buffer = ""; // reset buffer after successful parse
+            } catch {
+                buffer += "\n"; // incomplete JSON, continue accumulating
+            }
         }
 
-        // --- Step 4: Process payments + transit ---
-        let parsed_text = [];
-        let parsed_text_transit = [];
+        let parsed_text = await payment_sort(matchedObjects);
 
-        try {
-            parsed_text = await payment_sort(matchedObjects);
-            parsed_text = parsed_text
-                .filter(row => Array.isArray(row) && row.some(col => col !== null))
-                .reverse();
-        } catch (err) {
-            console.error("Error in payment_sort:", err);
-        }
+        // 1. Remove rows where all columns are null
+        parsed_text = parsed_text.filter(
+            row => Array.isArray(row) && row.some(col => col !== null)
+        );
 
-        try {
-            parsed_text_transit = await transit_sort(matchedObjects);
-            parsed_text_transit = parsed_text_transit
-                .filter(row => Array.isArray(row) && row.some(col => col !== null))
-                .reverse();
-            parsed_text_transit = transit_filter(parsed_text_transit);
-        } catch (err) {
-            console.error("Error in transit_sort/transit_filter:", err);
-        }
+        // 2. Flip (reverse) the order of rows
+        parsed_text = parsed_text.reverse();
 
-        // --- Step 5: Extract card info ---
+
+        let parsed_text_transit = await transit_sort(matchedObjects);
+
+        // 1. Remove rows where all columns are null
+        parsed_text_transit = parsed_text_transit.filter(
+            row => Array.isArray(row) && row.some(col => col !== null)
+        );
+
+        // 2. Flip (reverse) the order of rows
+        parsed_text_transit = parsed_text_transit.reverse();
+
+        parsed_text_transit = transit_filter(parsed_text_transit);
+
         let name = "WASABI HOLDER";
         let is_name_checked = false;
-        let balance = 0;
 
+        let balance = 0;
         for (let i = 0; i < parsed_text.length; i++) {
-            if (parsed_text[i][3] === "Issue card" && !is_name_checked) {
+            if (parsed_text[i][3] === "Issue card" && is_name_checked === false) {
                 name = parsed_text[i][4];
                 is_name_checked = true;
             }
-            balance += parsed_text[i][5] ? parsed_text[i][5] : 0;
+            balance += (parsed_text[i][5] ? parsed_text[i][5] : 0);
         }
 
-        const type = parsed_text[0]?.[3] ?? "Unknown";
-        const exp = parsed_text[0]?.[1];
+        let type = parsed_text[0][3];
+        let exp = parsed_text[0][1]; // "29 Jan 2025"
 
-        let result = "Exp. N/A";
-        if (exp) {
-            const date = new Date(exp);
-            date.setFullYear(date.getFullYear() + 5);
-            const month = String(date.getMonth() + 1).padStart(2, "0");
-            const year = date.getFullYear();
-            result = `Exp. ${month}/${year}`;
-        }
+// Parse the date
+        let date = new Date(exp);
 
-        // --- Step 6: Render ---
+// Add 5 years
+        date.setFullYear(date.getFullYear() + 5);
+
+// Format as "01/MM/YYYY"
+        let month = String(date.getMonth() + 1).padStart(2, '0'); // months are 0-indexed
+        let year = date.getFullYear();
+
+        let result = `01/${month}/${year}`;
+
+        result = "Exp. "+result.slice(3);
+
+
         payment_render(parsed_text);
         transit_render(parsed_text_transit);
+
         card_render(type, balance, result, serial, name);
 
-        document.getElementById("loader_payment")?.classList.add("hidden");
-        document.getElementById("loader_transit")?.classList.add("hidden");
+        const loader_payment = document.getElementById("loader_payment");
+        loader_payment.classList.add("hidden");
 
-    } catch (e) {
-        console.error("Log fetch/parse error:", e);
-        card_render_invalid(serial);
-        document.getElementById("loader_payment")?.classList.add("hidden");
-        document.getElementById("loader_transit")?.classList.add("hidden");
+        const loader_transit = document.getElementById("loader_transit");
+        loader_transit.classList.add("hidden");
+
+    } catch(e) {
+        console.log(e);
+        const serial = getCookie('iciwi_serial');
+        card_render_invalid(serial)
+
+
+
+        const loader_payment = document.getElementById("loader_payment");
+        loader_payment.classList.add("hidden");
+
+        const loader_transit = document.getElementById("loader_transit");
+        loader_transit.classList.add("hidden");
     }
 }
 
