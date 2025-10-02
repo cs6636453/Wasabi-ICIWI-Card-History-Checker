@@ -1,3 +1,8 @@
+function getCookie(name) {
+    const m = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]*)'));
+    return m ? decodeURIComponent(m[2]) : null;
+}
+
 async function fetch_log() {
     const serial = getCookie("iciwi_serial");
 
@@ -6,29 +11,32 @@ async function fetch_log() {
         if (!resp.ok) throw new Error("Failed to fetch iciwi.log: " + resp.status);
 
         const text = await resp.text();
-        let logs;
 
-        try {
-            // case 1: file is a JSON array/object
-            logs = JSON.parse(text);
-            if (!Array.isArray(logs)) {
-                logs = [logs]; // wrap single object
-            }
-        } catch {
-            // case 2: newline-separated JSON
-            logs = text
-                .trim()
-                .split("\n")
-                .map(line => {
-                    try {
-                        return JSON.parse(line);
-                    } catch {
-                        return null;
-                    }
-                })
-                .filter(x => x !== null);
+        // --- Step 1: Split by newline and parse each JSON object ---
+        const logs = text
+            .trim()
+            .split("\n")
+            .map(line => {
+                try {
+                    return JSON.parse(line);
+                } catch (err) {
+                    console.warn("Failed to parse line as JSON:", line, err);
+                    return null;
+                }
+            })
+            .filter(obj => obj !== null); // remove invalid lines
+
+        if (!logs.length) {
+            console.warn("No valid log entries found.");
+            payment_render([]);
+            transit_render([]);
+            card_render_invalid(serial);
+            document.getElementById("loader_payment")?.classList.add("hidden");
+            document.getElementById("loader_transit")?.classList.add("hidden");
+            return;
         }
 
+        // --- Step 2: Filter logs by allowed messages + serial ---
         const allowedMessages = new Set([
             "new-card",
             "top-up-card",
@@ -43,19 +51,40 @@ async function fetch_log() {
             return allowedMessages.has(obj.message) && objSerial === serial;
         });
 
-        // (same as before: process payments, transit, render…)
-        let parsed_text = await payment_sort(matchedObjects);
-        parsed_text = parsed_text
-            .filter(row => Array.isArray(row) && row.some(col => col !== null))
-            .reverse();
+        if (!matchedObjects.length) {
+            console.warn("No matching logs for serial:", serial);
+            payment_render([]);
+            transit_render([]);
+            card_render_invalid(serial);
+            document.getElementById("loader_payment")?.classList.add("hidden");
+            document.getElementById("loader_transit")?.classList.add("hidden");
+            return;
+        }
 
-        let parsed_text_transit = await transit_sort(matchedObjects);
-        parsed_text_transit = parsed_text_transit
-            .filter(row => Array.isArray(row) && row.some(col => col !== null))
-            .reverse();
+        // --- Step 3: Process payments + transit ---
+        let parsed_text = [];
+        let parsed_text_transit = [];
 
-        parsed_text_transit = transit_filter(parsed_text_transit);
+        try {
+            parsed_text = await payment_sort(matchedObjects);
+            parsed_text = parsed_text
+                .filter(row => Array.isArray(row) && row.some(col => col !== null))
+                .reverse();
+        } catch (err) {
+            console.error("Error in payment_sort:", err);
+        }
 
+        try {
+            parsed_text_transit = await transit_sort(matchedObjects);
+            parsed_text_transit = parsed_text_transit
+                .filter(row => Array.isArray(row) && row.some(col => col !== null))
+                .reverse();
+            parsed_text_transit = transit_filter(parsed_text_transit);
+        } catch (err) {
+            console.error("Error in transit_sort/transit_filter:", err);
+        }
+
+        // --- Step 4: Extract card info ---
         let name = "WASABI HOLDER";
         let is_name_checked = false;
         let balance = 0;
@@ -80,6 +109,7 @@ async function fetch_log() {
             result = `Exp. ${month}/${year}`;
         }
 
+        // --- Step 5: Render ---
         payment_render(parsed_text);
         transit_render(parsed_text_transit);
         card_render(type, balance, result, serial, name);
@@ -89,10 +119,12 @@ async function fetch_log() {
 
     } catch (e) {
         console.error("Log fetch/parse error:", e);
-        const serial = getCookie("iciwi_serial");
         card_render_invalid(serial);
-
         document.getElementById("loader_payment")?.classList.add("hidden");
         document.getElementById("loader_transit")?.classList.add("hidden");
     }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetch_log();
+});
