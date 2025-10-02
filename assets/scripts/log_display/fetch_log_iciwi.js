@@ -1,11 +1,12 @@
 async function fetch_log(serial) {
     try {
-        // console.log(serial);
-        const resp = await fetch("../../../../iciwi.log", { cache: "no-store" });
+        const resp = await fetch("https://bluemap.limaru.net/iciwi.log", { cache: "no-store" });
         if (!resp.ok) throw new Error("Failed to fetch iciwi.log: " + resp.status);
 
+        // the file content is a JSON string → parse directly
         const text = await resp.text();
-        const lines = text.split("\n");
+        const logs = JSON.parse(text); // now logs is an array/object
+const lines = logs.split("\n");
 
         const allowedMessages = new Set([
             "new-card",
