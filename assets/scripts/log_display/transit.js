@@ -1,4 +1,4 @@
-S3async function transit_sort(raw_text) {
+async function transit_sort(raw_text) {
     const rowCount = raw_text.length;
     const colCount = 10;
     const table = Array.from({ length: rowCount }, () => Array(colCount).fill(null));
