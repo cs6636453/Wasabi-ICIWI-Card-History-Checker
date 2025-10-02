@@ -1,19 +1,33 @@
-function getCookie(name) {
-    const m = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]*)'));
-    return m ? decodeURIComponent(m[2]) : null;
-}
-
 async function fetch_log() {
     const serial = getCookie("iciwi_serial");
 
     try {
-        // direct fetch from URL
         const resp = await fetch("https://bluemap.limaru.net/iciwi.log", { cache: "no-store" });
         if (!resp.ok) throw new Error("Failed to fetch iciwi.log: " + resp.status);
 
-        // the file content is a JSON string → parse directly
         const text = await resp.text();
-        const logs = JSON.parse(text); // now logs is an array/object
+        let logs;
+
+        try {
+            // case 1: file is a JSON array/object
+            logs = JSON.parse(text);
+            if (!Array.isArray(logs)) {
+                logs = [logs]; // wrap single object
+            }
+        } catch {
+            // case 2: newline-separated JSON
+            logs = text
+                .trim()
+                .split("\n")
+                .map(line => {
+                    try {
+                        return JSON.parse(line);
+                    } catch {
+                        return null;
+                    }
+                })
+                .filter(x => x !== null);
+        }
 
         const allowedMessages = new Set([
             "new-card",
@@ -24,13 +38,12 @@ async function fetch_log() {
             "payment"
         ]);
 
-        // filter by message + serial
         const matchedObjects = logs.filter(obj => {
             const objSerial = obj.data?.serial ?? obj.data?.card;
             return allowedMessages.has(obj.message) && objSerial === serial;
         });
 
-        // --- process for payment + transit ---
+        // (same as before: process payments, transit, render…)
         let parsed_text = await payment_sort(matchedObjects);
         parsed_text = parsed_text
             .filter(row => Array.isArray(row) && row.some(col => col !== null))
@@ -43,7 +56,6 @@ async function fetch_log() {
 
         parsed_text_transit = transit_filter(parsed_text_transit);
 
-        // --- card info ---
         let name = "WASABI HOLDER";
         let is_name_checked = false;
         let balance = 0;
@@ -57,7 +69,7 @@ async function fetch_log() {
         }
 
         const type = parsed_text[0]?.[3] ?? "Unknown";
-        const exp = parsed_text[0]?.[1]; // e.g. "29 Jan 2025"
+        const exp = parsed_text[0]?.[1];
 
         let result = "Exp. N/A";
         if (exp) {
@@ -68,7 +80,6 @@ async function fetch_log() {
             result = `Exp. ${month}/${year}`;
         }
 
-        // --- render ---
         payment_render(parsed_text);
         transit_render(parsed_text_transit);
         card_render(type, balance, result, serial, name);
@@ -85,7 +96,3 @@ async function fetch_log() {
         document.getElementById("loader_transit")?.classList.add("hidden");
     }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-    fetch_log();
-});
