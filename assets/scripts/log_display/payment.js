@@ -61,6 +61,8 @@ async function payment_sort(raw_text) {
                     continue; // skip this row
                 }
 
+                const fareT = fare;
+
                 // Correct fare check
                 if (Number(Math.abs(fare)) === 0 && i > 0) {
                     const tmp_next = raw_text[i-1];
@@ -73,8 +75,28 @@ async function payment_sort(raw_text) {
 
                         if (currentValue !== nextValue) {
                             fare = -(Math.abs(currentValue - nextValue).toFixed(2));
-                            titleL = "Pay by debit";
-                            icon = "account_balance_wallet";
+                            titleL = "Missing payment";
+                            titleR = "Wasabi";
+                            icon = "payment_card";
+                        }
+                        // console.log(fare);
+                    }
+                }
+
+                if (Number(Math.abs(fareT)) === 0 && i < rowCount - 1) {
+                    const tmp_next = raw_text[i+1];
+                    // console.log(raw_text[i+1], raw_text[i]);
+                    if (tmp_next) {
+                        const currentValue = Number(obj.data.value || 0);
+                        const nextValue = Number(tmp_next.data.value || 0);
+
+                        // console.log(currentValue, obj.data.value, nextValue, tmp_next.data.value);
+
+                        if (currentValue !== nextValue) {
+                            fare += -(Math.abs(currentValue - nextValue).toFixed(2));
+                            titleL = "Missing payment";
+                            titleR = "Wasabi";
+                            icon = "payment_card";
                         }
                         // console.log(fare);
                     }
