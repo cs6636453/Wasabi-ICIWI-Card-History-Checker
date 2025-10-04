@@ -83,23 +83,24 @@ async function fetch_log() {
             balance += (parsed_text[i][5] ? parsed_text[i][5] : 0);
         }
 
+        name = parsed_text[parsed_text.length-1][6];
+
         let type = parsed_text[0][3];
         let exp = parsed_text[0][1]; // "29 Jan 2025"
 
-// Parse the date
+        // Parse the date
         let date = new Date(exp);
 
-// Add 5 years
+        // Add 5 years
         date.setFullYear(date.getFullYear() + 5);
 
-// Format as "01/MM/YYYY"
+        // Format as "01/MM/YYYY"
         let month = String(date.getMonth() + 1).padStart(2, '0'); // months are 0-indexed
         let year = date.getFullYear();
 
         let result = `01/${month}/${year}`;
 
         result = "Exp. "+result.slice(3);
-
 
         payment_render(parsed_text);
         transit_render(parsed_text_transit);
@@ -116,8 +117,6 @@ async function fetch_log() {
         console.log(e);
         const serial = getCookie('iciwi_serial');
         card_render_invalid(serial)
-
-
 
         const loader_payment = document.getElementById("loader_payment");
         loader_payment.classList.add("hidden");

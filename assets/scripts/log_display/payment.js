@@ -1,7 +1,10 @@
+// --- PAYMENT SORT ---
 async function payment_sort(raw_text) {
     const rowCount = raw_text.length;
-    const colCount = 6;
+    const colCount = 7;
     const table = Array.from({ length: rowCount }, () => Array(colCount).fill(null));
+
+    const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
     for (let i = 0; i < rowCount; i++) {
         const obj = raw_text[i];
@@ -17,7 +20,7 @@ async function payment_sort(raw_text) {
             case "new-card":
                 icon = "checkbook";
                 titleL = "Issue card";
-                titleR = await getMinecraftUsername(obj.data.player); // now works
+                titleR = await getMinecraftUsername(obj.data.player);
                 fare = +(Number(obj.data.value).toFixed(2));
                 break;
             case "refund-card":
@@ -38,9 +41,7 @@ async function payment_sort(raw_text) {
                 titleR = obj.data.xStation;
                 fare = -((Number(obj.data.fare)).toFixed(2));
 
-                // Check xStation with multiple substrings
                 const station = obj.data.xStation;
-
                 if (["Bus-", "KTB", "ETB", "BRT"].some(s => station.includes(s))) {
                     icon = "directions_bus";
                     titleL = "Bus payment";
@@ -58,102 +59,93 @@ async function payment_sort(raw_text) {
                     titleL = "Education";
                     titleR = "KONNO UNIV";
                 } else if (["BaanRattana", "Not in use"].some(s => station.includes(s))) {
-                    continue; // skip this row
+                    continue;
                 }
 
                 const fareT = fare;
 
                 // Correct fare check
                 if (Number(Math.abs(fare)) === 0 && i > 0) {
-                    const tmp_next = raw_text[i-1];
-                    // console.log(raw_text[i+1], raw_text[i]);
-                    if (tmp_next) {
+                    const tmp_prev = raw_text[i-1];
+                    if (tmp_prev) {
                         const currentValue = Number(obj.data.value || 0);
-                        const nextValue = Number(tmp_next.data.value || 0);
-
-                        // console.log(currentValue, obj.data.value, nextValue, tmp_next.data.value);
-
-                        if (currentValue !== nextValue) {
-                            fare = -(Math.abs(currentValue - nextValue).toFixed(2));
+                        const prevValue = Number(tmp_prev.data.value || 0);
+                        if (currentValue !== prevValue) {
+                            fare = -(Math.abs(currentValue - prevValue).toFixed(2));
                             titleL = "Missing payment";
                             titleR = "Wasabi";
                             icon = "payment_card";
                         }
-                        // console.log(fare);
                     }
                 }
 
                 if (Number(Math.abs(fareT)) === 0 && i < rowCount - 1) {
                     const tmp_next = raw_text[i+1];
-                    // console.log(raw_text[i+1], raw_text[i]);
                     if (tmp_next) {
                         const currentValue = Number(obj.data.value || 0);
                         const nextValue = Number(tmp_next.data.value || 0);
-
-                        // console.log(currentValue, obj.data.value, nextValue, tmp_next.data.value);
-
                         if (currentValue !== nextValue) {
                             fare += -(Math.abs(currentValue - nextValue).toFixed(2));
                             titleL = "Missing payment";
                             titleR = "Wasabi";
                             icon = "payment_card";
                         }
-                        // console.log(fare);
                     }
                 }
 
                 break;
             case "payment":
                 icon = "storefront";
-
-                if (["Bus-", "KTB", "ETB", "BRT"].some(s => obj.data.station.includes(s))) {
-                    icon = "directions_bus";
-                    titleL = "Bus payment"
-                } else if (["Boat-"].some(s => obj.data.station.includes(s))) {
-                    icon = "directions_boat";
-                    titleL = "Ferry payment"
-                }
-
                 titleL = "Merchant";
-                titleR = obj.data.station ? obj.data.station : '["IPID"=27]';
+                titleR = obj.data.station || '["IPID"=27]';
                 fare = -((Number(obj.data.price)).toFixed(2));
+
+                if (["Bus-", "KTB", "ETB", "BRT"].some(s => titleR.includes(s))) {
+                    icon = "directions_bus";
+                    titleL = "Bus payment";
+                } else if (["Boat-"].some(s => titleR.includes(s))) {
+                    icon = "directions_boat";
+                    titleL = "Ferry payment";
+                }
                 break;
             default:
                 continue;
         }
 
-        table[i][0] = icon; // icon
+        table[i][0] = icon;
 
-        // Parse timestamp from log
+        // Format log date as "22 Sep 2025" (English, 3-letter month)
         const logDate = new Date(obj.timestamp);
-
-        // Format date as "22 Sep 2025"
-        const optionsDate = { day: "2-digit", month: "short", year: "numeric" };
-        table[i][1] = logDate.toLocaleDateString(undefined, optionsDate);
+        const day = String(logDate.getDate()).padStart(2, "0");
+        const month = monthNames[logDate.getMonth()];
+        const year = logDate.getFullYear();
+        table[i][1] = `${day} ${month} ${year}`;
 
         // Format time as "22:29" (24-hour)
-        const optionsTime = { hour: "2-digit", minute: "2-digit", hour12: false };
-        table[i][2] = logDate.toLocaleTimeString(undefined, optionsTime);
+        const hours = String(logDate.getHours()).padStart(2, "0");
+        const minutes = String(logDate.getMinutes()).padStart(2, "0");
+        table[i][2] = `${hours}:${minutes}`;
 
-        table[i][3] = titleL; // description 1
-        table[i][4] = titleR; // description 2
-        table[i][5] = fare;   // fare
+        table[i][3] = titleL;
+        table[i][4] = titleR;
+        table[i][5] = fare;
+        table[i][6] = await getMinecraftUsername(obj.data.player || "WASABI CARD HOLDER");
     }
 
-    return table;
+    // Remove rows that were skipped
+    return table.filter(row => row[0] !== null);
 }
 
-// Async function to get username from Ashcon API
+// --- MINECRAFT USERNAME FETCH ---
 async function getMinecraftUsername(uuid) {
     try {
         const cleanUUID = uuid.replace(/-/g, "");
         const resp = await fetch(`https://api.ashcon.app/mojang/v2/user/${cleanUUID}`);
         if (!resp.ok) throw new Error("Failed to fetch username");
-
         const data = await resp.json();
-        return data.username; // current Minecraft username
+        return data.username;
     } catch (err) {
         console.error(err);
-        return uuid; // fallback to UUID if fetch fails
+        return uuid;
     }
 }
