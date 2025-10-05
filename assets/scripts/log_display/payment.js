@@ -81,14 +81,16 @@ async function payment_sort(raw_text) {
 
                 if (Number(Math.abs(fareT)) === 0 && i < rowCount - 1) {
                     const tmp_next = raw_text[i+1];
-                    if (tmp_next) {
-                        const currentValue = Number(obj.data.value || 0);
-                        const nextValue = Number(tmp_next.data.value || 0);
-                        if (currentValue !== nextValue) {
-                            fare += -(Math.abs(currentValue - nextValue).toFixed(2));
-                            titleL = "Missing payment";
-                            titleR = "Wasabi";
-                            icon = "payment_card";
+                    if (tmp_next.message !== "top-up-card") {
+                        if (tmp_next) {
+                            const currentValue = Number(obj.data.value || 0);
+                            const nextValue = Number(tmp_next.data.value || 0);
+                            if (currentValue !== nextValue) {
+                                fare += -(Math.abs(currentValue - nextValue).toFixed(2));
+                                titleL = "Missing payment";
+                                titleR = "Wasabi";
+                                icon = "payment_card";
+                            }
                         }
                     }
                 }

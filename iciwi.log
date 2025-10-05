@@ -10988,3 +10988,40 @@
     "fare": "0.00"
   }
 }
+{
+  "timestamp": "2025-09-26 08:20:32",
+  "level": "INFO",
+  "message": "top-up-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "card": "BD-942",
+    "old": "91.50",
+    "change": "10.0"
+  }
+}
+{
+  "timestamp": "2025-10-04 09:45:37",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "101.50",
+    "serial": "BD-942",
+    "nStation": "KTB-4711"
+  }
+}
+{
+  "timestamp": "2025-10-04 09:45:38",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "100.00",
+    "railPass": "",
+    "serial": "BD-942",
+    "osi": "false",
+    "nStation": "KTB-4711",
+    "xStation": "KTB-4711",
+    "fare": "0.00"
+  }
+}
