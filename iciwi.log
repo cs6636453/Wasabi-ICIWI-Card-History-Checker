@@ -10989,39 +10989,379 @@
   }
 }
 {
-  "timestamp": "2025-09-26 08:20:32",
-  "level": "INFO",
-  "message": "top-up-card",
-  "data": {
-    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
-    "card": "BD-942",
-    "old": "91.50",
-    "change": "10.0"
-  }
-}
-{
-  "timestamp": "2025-10-04 09:45:37",
+  "timestamp": "2025-10-04 09:46:32",
   "level": "INFO",
   "message": "card-entry",
   "data": {
     "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
-    "value": "101.50",
+    "value": "91.50",
     "serial": "BD-942",
     "nStation": "KTB-4711"
   }
 }
 {
-  "timestamp": "2025-10-04 09:45:38",
+  "timestamp": "2025-10-04 09:46:32",
   "level": "INFO",
   "message": "card-exit",
   "data": {
     "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
-    "value": "100.00",
+    "value": "90.80",
+    "railPass": "",
+    "serial": "BD-942",
+    "osi": "true",
+    "nStation": "KTB-4711",
+    "xStation": "KTB-4711",
+    "fare": "0.00"
+  }
+}
+{
+  "timestamp": "2025-10-05 11:53:57",
+  "level": "INFO",
+  "message": "payment",
+  "data": {
+    "price": "3.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-10-05 11:54:40",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BD-942",
+    "nStation": "KTB-4701",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "87.80"
+  }
+}
+{
+  "timestamp": "2025-10-05 11:54:40",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "osi": "false",
+    "nStation": "KTB-4701",
+    "xStation": "KTB-4701",
+    "fare": "0.00",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "87.10",
+    "railPass": "",
+    "serial": "BD-942"
+  }
+}
+{
+  "timestamp": "2025-10-05 13:59:51",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "100.0",
+    "serial": "BN-44293",
+    "player": "44808b6a-6bf6-4559-8c39-d293561125ca"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:00:04",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-44293",
+    "nStation": "Downtown",
+    "player": "44808b6a-6bf6-4559-8c39-d293561125ca",
+    "value": "100.00"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:00:10",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "osi": "false",
+    "nStation": "Downtown",
+    "xStation": "Downtown",
+    "fare": "0.00",
+    "player": "44808b6a-6bf6-4559-8c39-d293561125ca",
+    "value": "99.40",
+    "railPass": "",
+    "serial": "BN-44293"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:00:56",
+  "level": "INFO",
+  "message": "top-up-card",
+  "data": {
+    "old": "99.4",
+    "card": "BN-44293",
+    "player": "44808b6a-6bf6-4559-8c39-d293561125ca",
+    "change": "10.0"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:02:02",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "serial": "BN-44293",
+    "nStation": "Downtown",
+    "player": "44808b6a-6bf6-4559-8c39-d293561125ca",
+    "value": "109.40"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:02:41",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "osi": "false",
+    "nStation": "Downtown",
+    "xStation": "Legacy Road",
+    "fare": "0.00",
+    "player": "44808b6a-6bf6-4559-8c39-d293561125ca",
+    "value": "109.40",
+    "railPass": "",
+    "serial": "BN-44293"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:34:36",
+  "level": "INFO",
+  "message": "payment",
+  "data": {
+    "price": "-1.0",
+    "player": "44808b6a-6bf6-4559-8c39-d293561125ca"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:34:37",
+  "level": "INFO",
+  "message": "payment",
+  "data": {
+    "price": "-1.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:34:40",
+  "level": "INFO",
+  "message": "payment",
+  "data": {
+    "price": "-1.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:34:42",
+  "level": "INFO",
+  "message": "payment",
+  "data": {
+    "price": "-1.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:34:46",
+  "level": "INFO",
+  "message": "payment",
+  "data": {
+    "price": "-1.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:35:11",
+  "level": "INFO",
+  "message": "payment",
+  "data": {
+    "price": "50.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:35:27",
+  "level": "INFO",
+  "message": "payment",
+  "data": {
+    "price": "50.0",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:38:07",
+  "level": "INFO",
+  "message": "payment",
+  "data": {
+    "price": "50.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-10-05 14:40:26",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "serial": "BD-85014",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb"
+  }
+}
+{
+  "timestamp": "2025-10-05 15:36:10",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "serial": "BV-22105",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-10-05 15:36:16",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "card": "BV-22105",
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-10-05 15:36:39",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "serial": "BV-6917",
+    "player": "158f41d3-6446-492b-8dea-7cfa56ae3533"
+  }
+}
+{
+  "timestamp": "2025-10-05 15:37:51",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "serial": "BC-93493",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb"
+  }
+}
+{
+  "timestamp": "2025-10-05 15:37:56",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "card": "BC-93493",
+    "value": "10.0",
+    "player": "65131e96-c8d6-4d2d-ab82-d4c39389d4eb"
+  }
+}
+{
+  "timestamp": "2025-10-05 15:38:04",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "value": "10.0",
+    "serial": "BP-89227",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-10-05 15:38:08",
+  "level": "INFO",
+  "message": "refund-card",
+  "data": {
+    "card": "BP-89227",
+    "value": "10.0",
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15"
+  }
+}
+{
+  "timestamp": "2025-10-05 15:56:40",
+  "level": "INFO",
+  "message": "new-card",
+  "data": {
+    "serial": "BA-79039",
+    "player": "d2e26594-5451-43b9-8173-3a4e23a2ef9c",
+    "value": "20.0"
+  }
+}
+{
+  "timestamp": "2025-10-09 14:02:23",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "41.10",
+    "serial": "BD-942",
+    "nStation": "Karasuma"
+  }
+}
+{
+  "timestamp": "2025-10-09 14:11:45",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "39.30",
     "railPass": "",
     "serial": "BD-942",
     "osi": "false",
-    "nStation": "KTB-4711",
-    "xStation": "KTB-4711",
+    "nStation": "Karasuma",
+    "xStation": "Chitose",
+    "fare": "0.00"
+  }
+}
+{
+  "timestamp": "2025-10-09 14:13:36",
+  "level": "INFO",
+  "message": "payment",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "price": "39.3"
+  }
+}
+{
+  "timestamp": "2025-10-09 14:13:40",
+  "level": "INFO",
+  "message": "payment",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "price": "3.0"
+  }
+}
+{
+  "timestamp": "2025-10-09 14:14:07",
+  "level": "INFO",
+  "message": "top-up-card",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "change": "10.0",
+    "old": "0.0",
+    "card": "BD-942"
+  }
+}
+{
+  "timestamp": "2025-10-09 14:14:54",
+  "level": "INFO",
+  "message": "card-entry",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "10.00",
+    "serial": "BD-942",
+    "nStation": "Chitose"
+  }
+}
+{
+  "timestamp": "2025-10-09 14:14:54",
+  "level": "INFO",
+  "message": "card-exit",
+  "data": {
+    "player": "87517a5e-5c13-4b7b-acd3-667da3b08f15",
+    "value": "9.40",
+    "railPass": "",
+    "serial": "BD-942",
+    "osi": "false",
+    "nStation": "Chitose",
+    "xStation": "Chitose",
     "fare": "0.00"
   }
 }

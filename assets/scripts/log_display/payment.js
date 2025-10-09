@@ -92,6 +92,17 @@ async function payment_sort(raw_text) {
                                 icon = "payment_card";
                             }
                         }
+                    } else if (tmp_next.message) {
+                        if (tmp_next) {
+                            const currentValue = Number(obj.data.value || 0);
+                            const nextValue = Number(tmp_next.data.old || 0);
+                            if (currentValue !== nextValue) {
+                                fare += -(Math.abs(currentValue - nextValue).toFixed(2));
+                                titleL = "Missing payment";
+                                titleR = "Wasabi";
+                                icon = "payment_card";
+                            }
+                        }
                     }
                 }
 
