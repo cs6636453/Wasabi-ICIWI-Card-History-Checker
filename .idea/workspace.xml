@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="002aeec2-436a-4154-94e6-5c6aec0c9907" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bind_card/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/ktb/station-mapping.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/ktb/station-mapping.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bind_card/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bind_card/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp.html" beforeDir="false" afterPath="$PROJECT_DIR$/pancard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +65,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phong\Documents\Wasabi_IC\bind_card" />
       <recent name="C:\Users\phong\Documents\Wasabi_IC\assets\scripts\log_display" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -103,7 +100,7 @@
       <workItem from="1760324682025" duration="92000" />
       <workItem from="1760328711054" duration="777000" />
       <workItem from="1760449768289" duration="683000" />
-      <workItem from="1761048996371" duration="644000" />
+      <workItem from="1761048996371" duration="1364000" />
     </task>
     <servers />
   </component>
